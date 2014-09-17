@@ -1,0 +1,128 @@
+/*
+  Color Schemes
+
+    DARK BLUE
+    Wet Asphalt  = #34495e
+    Midnight     = #2c3e50
+
+    PURPLE
+    Amethyst     = #9b59b6
+    Wisteria     = #8e44ad
+
+    BLUE
+    Peter River  = #3498db
+    Belize Hole  = #2980b9
+
+    GREEN
+    Emerald      = #2ecc71
+    Nephritis    = #27ae60
+
+    TEAL
+    Turquoise    = #1abc9c
+    Green Sea    = #16a085
+
+    YELLOW
+    Sun Flower   = #f1c40f
+    Orange       = #f39c12
+
+    ORANGE
+    Carrot       = #e67e22
+    Pumpkin      = #d35400
+
+    RED
+    Alizarin     = #e74c3c
+    Pomegranate  = #c0392b
+
+    WHITE
+    Clouds       = #ecf0f1
+    Silver       = #bdc3c7
+
+    GREY
+    Concrete     = #95a5a6
+    Asbestos     = #7f8c8d
+
+*/
+
+
+/* ==========
+  Common
+========= */
+html, body{background:#ecf0f1;}
+.container{width:960px;margin:0 auto;}
+img{max-width:100%;height:auto;}
+
+/* ==========
+  Header
+========= */
+header{}
+  header .container{border-bottom:1px solid #bdc3c7;}
+  header .gutter{padding:20px;}
+  header #logo{width:25%;float:left;}
+
+  header #mainNav{width:70%;float:right;}
+    #mainNav ul{float:right;}
+      #mainNav ul li{float:left;position:relative;display:block;}
+        #mainNav ul li a{color:#fff;background:#34495e;text-decoration:none;padding:10px 20px;border-radius:3px;margin:0 2px;transition:0.2s all;-webkit-transition:0.2s all;-moz-transition:0.2s all;-ms-transition:0.2s all;-o-transition:0.2s all;float:left;}
+          #mainNav ul li a:hover{background:#2c3e50;color:#ecf0f1;border-radius:3px 3px 0 0;}
+    #mainNav ul ul{display:none;position:absolute;left:0;top:100%;}
+      #mainNav ul li:hover ul{display:block;margin: 0 2px;}
+      #mainNav ul ul li{display:block;float:left;width:100%;}
+      #mainNav ul ul li a{font-size:12px;margin:0;border-top:1px solid #2c3e50;width:100%;border-radius:0;}
+        #mainNav ul ul li:hover a{border-radius:0;}
+
+
+/* ==========
+  Index
+========= */
+#content{}
+  #content .container > .gutter{padding:20px;}
+
+
+/* ==========
+  front-page
+========= */
+body.home #contentPrimary{width:75%;float:left;}
+  body.home #contentPrimary > .gutter{}
+
+  .post-entry{margin:0 0 50px;width:100%;float:left;}
+    .post-entry .gutter{}
+    .post-entry .post-entry-date{font-size:12px;}
+    .post-entry .post-entry-excerpt, .post-entry .post-entry-content{width:100%;}
+    .post-entry .post-meta{font-size:12px;}
+      .post-meta > *{display:inline;padding:0 10px 0 0;margin:0 10px 0 0;border-right:1px solid #bdc3c7;}
+      .post-meta > *:last-child{padding:0 10px 0 0;margin:0 10px 0 0;border-right:1px solid #bdc3c7;}
+      .post-meta .post-meta-author{}
+      .post-meta .post-meta-comments{}
+      .post-meta .post-meta-category{}
+      .post-meta .post-meta-tags{}
+      .post-meta i{font-size:14px;}
+
+
+body.home #contentSecondary{width:25%;float:right;}
+  body.home #contentPrimary .gutter{}
+
+
+/* ==========
+  Common
+========= */
+
+
+
+/* ==========
+  Common
+========= */
+
+
+
+/* ==========
+  Common
+========= */
+
+
+
+/* ==========
+  Footer
+========= */
+footer{}
+  footer .container{border-top:1px solid #bdc3c7;}
+  footer .gutter{padding:20px;}

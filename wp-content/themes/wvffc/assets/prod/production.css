@@ -1,0 +1,823 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	/*line-height: 1;*/
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/*
+TYPEPLATE
+URL ........... http://typeplate.com
+VERSION ....... 1.1.4
+Github ........ https://github.com/typeplate/bower
+AUTHORS ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+LICENSE ....... Creative Commmons Attribution 3.0 (http://creativecommons.org/licenses/by/3.0)
+LICENSE URL ... https://github.com/typeplate/bower/blob/master/license.txt
+*/
+
+
+
+/**
+ *
+ * =======================================================================
+	 Unicode Ampersand
+ * =======================================================================
+ */
+
+@font-face {
+	font-family: "Ampersand";
+	src: local("Georgia"), local("Garamond"), local("Palatino"), local("Book Antiqua");
+	unicode-range: U+0026;
+}
+
+@font-face {
+	font-family: "Ampersand";
+	src: local("Georgia");
+	unicode-range: U+270C;
+}
+
+
+/**
+ *
+ * Extend this class on any element of your
+ * choice for ampersands.
+ *
+ * For example:
+
+	<h6 class="ampersand">Dewey Cheat 'em & Howe</h6>
+
+ */
+.ampersand {
+	font-family: Ampersand, Verdana, sans-serif;
+}
+
+
+/**
+ *
+ * =======================================================================
+	 Word Wrap
+ * =======================================================================
+ */
+
+.breakword {
+	word-wrap: break-word;
+}
+
+.normal-wrap {
+	word-wrap: normal;
+}
+
+.inherit-wrap {
+	word-wrap: auto;
+}
+
+
+/**
+ *
+ * =======================================================================
+ * Drop Capitals:
+ * Extend this object into your markup.
+
+	 <p class="drop-cap">What a wonderful day it is out there wouldn't you'd say?</p>
+
+	* =======================================================================
+ */
+
+.drop-cap:first-letter {
+	float: left;
+	margin: auto .25em auto auto;
+	padding: inherit;
+	font-size: 4em;
+	font-family: inherit;
+	line-height: 1;
+	text-indent: 0;
+	background: transparent;
+	color: inherit;
+}
+
+p + .drop-cap {
+	text-indent: 0;
+	margin-top: 0;
+}
+
+
+/**
+ *
+ * =======================================================================
+	 Base Type
+ * =======================================================================
+ *
+ */
+
+html {
+	font: normal 87.5%/1.65 'Open Sans',sans-serif; /* base font size 18px with 1.65 line-height */
+}
+
+body {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word;
+	color: #34495e;
+}
+
+
+/**
+ *
+ * =======================================================================
+	 Fine Print
+ * =======================================================================
+ */
+
+small {
+	font-size: 65%;
+}
+
+
+/**
+ *
+ * =======================================================================
+	 Headings
+ * =======================================================================
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1;
+	margin-top: 0;
+	text-rendering: optimizeLegibility;
+	color: #34495e;
+}
+
+/**
+* Extend included classes on any element of your
+* choosing for adjusting type based on the scale
+* provided.
+
+* For example:
+
+ <h6 class="giga">Awesome Headline</h6>
+ <p class="tera">a story about a dude</p>
+
+* Our Type Scale is as follows with px fallbacks
+* for IE 6-8 as they do not understand REM units.
+*
+* 18, 21, 24, 36, 48, 60, 72, 90, 117
+*
+*
+* Explanation:
+* margin-bottom = ( base font-size * base line-height ) / current font-size
+*
+* Makes sure that there's always one unit of measure's worth of space between shit
+* for headings. This is better than spacing using line-height because of the wrapping issue where we have
+* wrapping onto 2 lines with a high line-height.
+ */
+
+.tera {
+	font-size: 117px;
+	font-size: 6.5rem; /* 117 / 18 = 6.5 */
+	margin-bottom: 4.56923px;
+	margin-bottom: 0.25385rem;
+}
+
+.giga {
+	font-size: 90px;
+	font-size: 5rem; /* 90 / 18 = 5 */
+	margin-bottom: 5.94px;
+	margin-bottom: 0.33rem;
+}
+
+.mega {
+	font-size: 72px;
+	font-size: 4rem; /* 72 / 18 = 4 */
+	margin-bottom: 7.425px;
+	margin-bottom: 0.4125rem;
+}
+
+h1,
+.alpha {
+	font-size: 60px;
+	font-size: 3.33333rem; /* 60 / 18 = 3.3333 */
+	margin-bottom: 8.91px;
+	margin-bottom: 0.495rem;
+}
+
+h2,
+.beta {
+	font-size: 48px;
+	font-size: 2.6667rem; /* 48 / 18 = 2.6667 */
+	margin-bottom: 11.1375px;
+	margin-bottom: 0.61875rem;
+}
+
+h3,
+.gamma {
+	font-size: 36px;
+	font-size: 2rem; /* 36 / 18 = 2 */
+	margin-bottom: 14.85px;
+	margin-bottom: 0.825rem;
+}
+
+h4,
+.delta {
+	font-size: 24px;
+	font-size: 1.3333333333333333rem; /* 24 / 18 = 1.3333 */
+	margin-bottom: 22.275px;
+	margin-bottom: 1.2375rem;
+}
+
+h5,
+.epsilon {
+	font-size: 21px;
+	font-size: 1.16667rem; /* 21 / 18 = 1.1667 */
+	margin-bottom: 25.45714px;
+	margin-bottom: 1.41429rem;
+}
+
+h6,
+.zeta {
+	font-size: 18px;
+	font-size: 1rem; /* 18 = 18 × 1 */
+	margin-bottom: 29.7px;
+	margin-bottom: 1.65rem;
+}
+
+
+/**
+ *
+ * =======================================================================
+	 Paragraphs and Anchors
+ * =======================================================================
+ */
+
+p {
+	margin: auto auto 1.5em; /* bottom margin for paragraphs */
+}
+
+a{text-decoration:none;transition:0.2s all;-webkit-transition:0.2s all;-moz-transition:0.2s all;-ms-transition:0.2s all;-o-transition:0.2s all;display:inline-block;}
+  a:hover{opacity:0.7;}
+  p > a{text-decoration:underline;}
+
+/**
+ *
+ * =======================================================================
+	 Hyphens
+ * =======================================================================
+ */
+
+abbr,
+acronym,
+blockquote,
+code,
+dir,
+kbd,
+listing,
+plaintext,
+q,
+samp,
+tt,
+var,
+xmp {
+	/* Accepted values: [ none | manual | auto ] */ /* http://meyerweb.com/eric/thoughts/2012/12/17/where-to-avoid-css-hyphenation */
+	-webkit-hyphens: none; /* Safari 5.1 thru 6, iOS 4.2 thru 6 */
+	-moz-hyphens: none; /* Firefox 16 thru 20 */
+	-ms-hyphens: none; /* IE10 */
+	-o-hyphens: none; /* PRESTO...haha LOL */
+	hyphens: none;	 /* W3C standard */
+}
+
+
+/**
+ *
+ * =======================================================================
+	 Code Blocks
+ * =======================================================================
+ */
+
+pre code {
+	word-wrap: normal;
+	white-space: -moz-pre-wrap;
+	white-space: pre-wrap; /* http://css-tricks.com/almanac/properties/w/whitespace */
+}
+
+pre {
+	white-space: pre;
+}
+
+code {
+	white-space: pre;
+	font-family: monospace;
+}
+
+
+/**
+ *
+ * =======================================================================
+ * Abbreviations Markup
+ * Extend this object into your markup
+
+	<abbr title="hyper text markup language">HMTL</abbr>
+
+ * Extend this object into your markup.
+ * =======================================================================
+ */
+
+abbr {
+	font-variant: small-caps; /* https://developer.mozilla.org/en-US/docs/CSS/font-variant */
+	font-weight: 600;
+	text-transform: lowercase;
+	color: #808080;
+}
+
+abbr[title]:hover {
+	cursor: help; /* cursor changed to a question mark when it has a title */
+}
+
+
+/**
+ *
+ * =======================================================================
+	 Definition Lists
+ * =======================================================================
+ */
+
+/**
+ * Lining Definition Style Markup
+ *
+	<dl class="lining">
+		<dt><b></b></dt>
+		<dd></dd>
+	</dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+.lining dt,
+.lining dd {
+	display: inline;
+	margin: 0;
+}
+.lining dt + dt:before,
+.lining dd + dt:before {
+	content: "\A";
+	white-space: pre;
+}
+.lining dd + dd:before {
+	content: ", ";
+}
+.lining dd:before {
+	content: ": ";
+	margin-left: -0.2em;
+}
+
+
+/**
+ * Dictionary Definition Style Markup
+ *
+	<dl class="dictionary-style">
+		<dt><b></b></dt>
+			<dd></dd>
+	</dl>
+ *
+ * Extend this object into your markup.
+ *
+ */
+.dictionary-style dt {
+	display: inline;
+	counter-reset: definitions;
+}
+.dictionary-style dt + dt:before {
+	content: ", ";
+	margin-left: -0.2em;
+}
+.dictionary-style dd {
+	display: block;
+	counter-increment: definitions;
+}
+.dictionary-style dd:before {
+	content: counter(definitions, decimal) ". ";
+}
+
+
+/**
+ *
+ * =======================================================================
+	 Blockquotes
+ * =======================================================================
+ */
+
+/**
+ * Blockquote Markup
+ *
+	<figure>
+		<blockquote class="blockquote" cite="">
+			<p></p>
+		</blockquote>
+		<figcaption>
+			<cite>
+				<small><a href=""></a></small>
+			</cite>
+		</figcaption>
+	</figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+
+.blockquote p:last-of-type {
+	margin-bottom: -0.825em;
+}
+
+.blockquote + figcaption {
+	display: block;
+	font-size: inherit;
+	text-align: right;
+}
+
+.blockquote + figcaption:before {
+	content: "-"; /* "-" is your citation flourish */
+}
+
+
+/**
+ *
+ * =======================================================================
+	 Pull Quotes
+ * =======================================================================
+ */
+
+/**
+ * Pull Quotes Markup
+ *
+	<aside class="pull-quote">
+		<blockquote>
+			<p></p>
+		</blockquote>
+	</aside>
+ *
+ * Extend this object into your custom stylesheet.
+ *
+ */
+.pull-quote {
+	position: relative;
+	padding: 1em;
+}
+.pull-quote:before,
+.pull-quote:after {
+	height: 1em;
+	opacity: 0.15;
+	position: absolute;
+	font-size: 4em;
+	color: #dc976e;
+}
+.pull-quote:before {
+	content: '“';
+	top: 0;
+	left: 0;
+}
+.pull-quote:after {
+	content: '”';
+	bottom: 0;
+	right: 0;
+}
+
+
+/**
+ *
+ * =======================================================================
+	 Figures
+ * =======================================================================
+ */
+
+/**
+ * Figures Markup
+ *
+	<figure>
+		<figcaption>
+			<strong>Fig. 4.2 | </strong>Type Anatomy, an excerpt from Mark Boulton's book<cite title="http://designingfortheweb.co.uk/book/part3/part3_chapter11.php">"Designing for the Web"</cite>
+		</figcaption>
+	</figure>
+ *
+ * Extend this object into your markup.
+ *
+ */
+
+
+/**
+ *
+ * =======================================================================
+	 Foot Notes
+ * =======================================================================
+ */
+
+/**
+ * Footnote Markup : Replace 'X' with your unique number for each footnote
+ *
+	<article>
+		<p><sup><a href="#fn-itemX" id="fn-returnX"></a></sup></p>
+		<footer>
+			<ol class="foot-notes">
+				<li id="fn-itemX"><a href="#fn-returnX">↩</a></li>
+			</ol>
+		</footer>
+	</article>
+ *
+ * Extend this object into your markup.
+ *
+ */
+
+/*
+  Color Schemes
+
+    DARK BLUE
+    Wet Asphalt  = #34495e
+    Midnight     = #2c3e50
+
+    PURPLE
+    Amethyst     = #9b59b6
+    Wisteria     = #8e44ad
+
+    BLUE
+    Peter River  = #3498db
+    Belize Hole  = #2980b9
+
+    GREEN
+    Emerald      = #2ecc71
+    Nephritis    = #27ae60
+
+    TEAL
+    Turquoise    = #1abc9c
+    Green Sea    = #16a085
+
+    YELLOW
+    Sun Flower   = #f1c40f
+    Orange       = #f39c12
+
+    ORANGE
+    Carrot       = #e67e22
+    Pumpkin      = #d35400
+
+    RED
+    Alizarin     = #e74c3c
+    Pomegranate  = #c0392b
+
+    WHITE
+    Clouds       = #ecf0f1
+    Silver       = #bdc3c7
+
+    GREY
+    Concrete     = #95a5a6
+    Asbestos     = #7f8c8d
+
+*/
+
+
+/* ==========
+  Common
+========= */
+html, body{background:#ecf0f1;}
+.container{width:960px;margin:0 auto;}
+img{max-width:100%;height:auto;}
+
+/* ==========
+  Header
+========= */
+header{}
+  header .container{border-bottom:1px solid #bdc3c7;}
+  header .gutter{padding:20px;}
+  header #logo{width:25%;float:left;}
+
+  header #mainNav{width:70%;float:right;}
+    #mainNav ul{float:right;}
+      #mainNav ul li{float:left;position:relative;display:block;}
+        #mainNav ul li a{color:#fff;background:#34495e;text-decoration:none;padding:10px 20px;border-radius:3px;margin:0 2px;transition:0.2s all;-webkit-transition:0.2s all;-moz-transition:0.2s all;-ms-transition:0.2s all;-o-transition:0.2s all;float:left;}
+          #mainNav ul li a:hover{background:#2c3e50;color:#ecf0f1;border-radius:3px 3px 0 0;}
+    #mainNav ul ul{display:none;position:absolute;left:0;top:100%;}
+      #mainNav ul li:hover ul{display:block;margin: 0 2px;}
+      #mainNav ul ul li{display:block;float:left;width:100%;}
+      #mainNav ul ul li a{font-size:12px;margin:0;border-top:1px solid #2c3e50;width:100%;border-radius:0;}
+        #mainNav ul ul li:hover a{border-radius:0;}
+
+
+/* ==========
+  Index
+========= */
+#content{}
+  #content .container > .gutter{padding:20px;}
+
+
+/* ==========
+  front-page
+========= */
+body.home #contentPrimary{width:75%;float:left;}
+  body.home #contentPrimary > .gutter{}
+
+  .post-entry{margin:0 0 50px;width:100%;float:left;}
+    .post-entry .gutter{}
+    .post-entry .post-entry-date{font-size:12px;}
+    .post-entry .post-entry-excerpt, .post-entry .post-entry-content{width:100%;}
+    .post-entry .post-meta{font-size:12px;}
+      .post-meta > *{display:inline;padding:0 10px 0 0;margin:0 10px 0 0;border-right:1px solid #bdc3c7;}
+      .post-meta > *:last-child{padding:0 10px 0 0;margin:0 10px 0 0;border-right:1px solid #bdc3c7;}
+      .post-meta .post-meta-author{}
+      .post-meta .post-meta-comments{}
+      .post-meta .post-meta-category{}
+      .post-meta .post-meta-tags{}
+      .post-meta i{font-size:14px;}
+
+
+body.home #contentSecondary{width:25%;float:right;}
+  body.home #contentPrimary .gutter{}
+
+
+/* ==========
+  Common
+========= */
+
+
+
+/* ==========
+  Common
+========= */
+
+
+
+/* ==========
+  Common
+========= */
+
+
+
+/* ==========
+  Footer
+========= */
+footer{}
+  footer .container{border-top:1px solid #bdc3c7;}
+  footer .gutter{padding:20px;}
+
+/* Portrait smartphones */
+@media screen and (max-width: 320px){
+
+}
+
+/* Landscape smartphones */
+@media screen and (min-width: 321px) and (max-width:480px){
+
+}
+
+/* Portrait tablets & phablets */
+@media screen and (min-width: 481px) and (max-width:768px){
+
+}
+
+/* Landscape tablets & desktops */
+@media screen and (min-width: 769px) and (max-width:960px){
+
+}
+
+/* TVs and Fullscreen desktops (this is what layout.css is set for) */
+@media screen and (min-width: 961px){
+
+}

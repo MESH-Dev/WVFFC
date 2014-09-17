@@ -1,0 +1,24 @@
+/* Portrait smartphones */
+@media screen and (max-width: 320px){
+
+}
+
+/* Landscape smartphones */
+@media screen and (min-width: 321px) and (max-width:480px){
+
+}
+
+/* Portrait tablets & phablets */
+@media screen and (min-width: 481px) and (max-width:768px){
+
+}
+
+/* Landscape tablets & desktops */
+@media screen and (min-width: 769px) and (max-width:960px){
+
+}
+
+/* TVs and Fullscreen desktops (this is what layout.css is set for) */
+@media screen and (min-width: 961px){
+
+}
