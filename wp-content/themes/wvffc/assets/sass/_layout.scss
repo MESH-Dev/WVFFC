@@ -7,16 +7,32 @@
 ================================================== */
 
 header{
-	.main-nav { height: 70px;
+	.main-nav { height: 70px; border-bottom: 5px solid white;
 		#logo { display: inline; float:left; background-image: url('assets/img/header.png'); background-repeat: no-repeat; width: 360px; height: 100%;
 			img { margin: 8px 32px; }
 		}
 		#mainNav { display: inline; float: left; background-color: $orange; width: 560px; height: 100%; font-family: $gothic; text-transform: uppercase; font-size: 22px;
 
-				ul { list-style-type: none; margin-top: 25px; margin-right: 0px; float: left;}
-				ul li { display: inline; margin-right: 33px; }
+				ul { list-style-type: none; margin-right: 0px; margin-left: 16px; float: left; }
+				ul li { display: inline; line-height: 70px; padding: 22px 16px; }
+				ul li.current_page_item a, ul li.current_page_ancestor a { border-bottom: 5px solid white; }
+				ul li:hover:after { content: url('assets/img/arrow.png'); position: absolute; top: 45px; margin-left: -4%; z-index:2; }
 				ul li a { color: white; }
-				ul li ul { display: none; }
+
+				ul li ul { display: none; position: absolute; left: 0; z-index: 1; background-color: white; margin-left: 0px; }
+
+				ul li ul li:hover:after { display: none;}
+				ul li:hover ul { display: block; }
+
+				ul li.current_page_ancestor ul { display: block; }
+				ul li ul li.current_page_item a { border-bottom: 5px solid $orange;}
+
+				ul li ul li { display: inline; }
+				ul li ul li a { color: $orange; }
+
+				/* ul li:hover { border-bottom: 4px solid white;} */
+
+
 				#search { display: inline; float: right; color: white; margin-top: 25px; margin-right: 25px; }
 
 		}

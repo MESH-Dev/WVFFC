@@ -1407,6 +1407,7 @@ or wrap each row of columns in a <div class="row"> */
 /* line 10, assets/sass/_layout.scss */
 header .main-nav {
   height: 70px;
+  border-bottom: 5px solid white;
 }
 /* line 11, assets/sass/_layout.scss */
 header .main-nav #logo {
@@ -1431,28 +1432,71 @@ header .main-nav #mainNav {
   font-family: "alternate-gothic-no-1-d";
   text-transform: uppercase;
   font-size: 22px;
+  /* ul li:hover { border-bottom: 4px solid white;} */
 }
 /* line 16, assets/sass/_layout.scss */
 header .main-nav #mainNav ul {
   list-style-type: none;
-  margin-top: 25px;
   margin-right: 0px;
+  margin-left: 16px;
   float: left;
 }
 /* line 17, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li {
   display: inline;
-  margin-right: 33px;
+  line-height: 70px;
+  padding: 22px 16px;
 }
 /* line 18, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li.current_page_item a, header .main-nav #mainNav ul li.current_page_ancestor a {
+  border-bottom: 5px solid white;
+}
+/* line 19, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li:hover:after {
+  content: url("assets/img/arrow.png");
+  position: absolute;
+  top: 45px;
+  margin-left: -4%;
+  z-index: 2;
+}
+/* line 20, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li a {
   color: white;
 }
-/* line 19, assets/sass/_layout.scss */
+/* line 22, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul {
   display: none;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  margin-left: 0px;
 }
-/* line 20, assets/sass/_layout.scss */
+/* line 24, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li ul li:hover:after {
+  display: none;
+}
+/* line 25, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li:hover ul {
+  display: block;
+}
+/* line 27, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li.current_page_ancestor ul {
+  display: block;
+}
+/* line 28, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li ul li.current_page_item a {
+  border-bottom: 5px solid #d75502;
+}
+/* line 30, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li ul li {
+  display: inline;
+}
+/* line 31, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li ul li a {
+  color: #d75502;
+}
+/* line 36, assets/sass/_layout.scss */
 header .main-nav #mainNav #search {
   display: inline;
   float: right;
@@ -1460,7 +1504,7 @@ header .main-nav #mainNav #search {
   margin-top: 25px;
   margin-right: 25px;
 }
-/* line 23, assets/sass/_layout.scss */
+/* line 39, assets/sass/_layout.scss */
 header .main-nav #donate {
   float: left;
   background-color: #46a8a5;
@@ -1470,7 +1514,7 @@ header .main-nav #donate {
   font-size: 22px;
   height: 100%;
 }
-/* line 24, assets/sass/_layout.scss */
+/* line 40, assets/sass/_layout.scss */
 header .main-nav #donate span {
   color: #2e485b;
   text-align: center;
