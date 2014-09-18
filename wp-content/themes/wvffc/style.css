@@ -1404,17 +1404,12 @@ or wrap each row of columns in a <div class="row"> */
 
 /* Header Styles
 ================================================== */
-/* line 9, assets/sass/_layout.scss */
-header {
-  width: 100%;
-  float: left;
-}
 /* line 10, assets/sass/_layout.scss */
-header .header-nav {
+header .main-nav {
   height: 70px;
 }
 /* line 11, assets/sass/_layout.scss */
-header .header-nav #logo {
+header .main-nav #logo {
   display: inline;
   float: left;
   background-image: url("assets/img/header.png");
@@ -1423,11 +1418,11 @@ header .header-nav #logo {
   height: 100%;
 }
 /* line 12, assets/sass/_layout.scss */
-header .header-nav #logo img {
+header .main-nav #logo img {
   margin: 8px 32px;
 }
 /* line 14, assets/sass/_layout.scss */
-header .header-nav #mainNav {
+header .main-nav #mainNav {
   display: inline;
   float: left;
   background-color: #d75502;
@@ -1437,52 +1432,50 @@ header .header-nav #mainNav {
   text-transform: uppercase;
   font-size: 22px;
 }
-/* line 15, assets/sass/_layout.scss */
-header .header-nav #mainNav .header-nav-main {
-  margin: 22px 0px;
-}
 /* line 16, assets/sass/_layout.scss */
-header .header-nav #mainNav .header-nav-main ul {
+header .main-nav #mainNav ul {
   list-style-type: none;
-  display: inline;
+  margin-top: 25px;
+  margin-right: 0px;
+  float: left;
 }
 /* line 17, assets/sass/_layout.scss */
-header .header-nav #mainNav .header-nav-main ul li {
+header .main-nav #mainNav ul li {
   display: inline;
   margin-right: 33px;
 }
 /* line 18, assets/sass/_layout.scss */
-header .header-nav #mainNav .header-nav-main ul li a {
+header .main-nav #mainNav ul li a {
   color: white;
 }
 /* line 19, assets/sass/_layout.scss */
-header .header-nav #mainNav .header-nav-main ul li ul {
+header .main-nav #mainNav ul li ul {
   display: none;
 }
 /* line 20, assets/sass/_layout.scss */
-header .header-nav #mainNav .header-nav-main #search {
+header .main-nav #mainNav #search {
   display: inline;
   float: right;
   color: white;
-  margin-right: 24px;
+  margin-top: 25px;
+  margin-right: 25px;
 }
 /* line 23, assets/sass/_layout.scss */
-header .header-nav #donate {
-  display: inline;
+header .main-nav #donate {
   float: left;
   background-color: #46a8a5;
   width: 100px;
-  height: 100%;
   font-family: "alternate-gothic-no-1-d";
   text-transform: uppercase;
   font-size: 22px;
+  height: 100%;
 }
 /* line 24, assets/sass/_layout.scss */
-header .header-nav #donate span {
+header .main-nav #donate span {
   color: #2e485b;
   text-align: center;
   display: block;
-  margin: 25px auto;
+  margin: 28px auto;
 }
 
 /* Navigation Styles
