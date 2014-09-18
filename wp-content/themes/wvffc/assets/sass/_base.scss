@@ -20,6 +20,7 @@
 /* VARIABLES
 ================================================= */
 
+//colors
 
 $cream: #F1E3C2;
 $tan: #E3D9BF;
@@ -29,12 +30,23 @@ $cherry_black: #472A2B;
 $dark_red: #921B23;
 $brownish: #a27b30;
 
+$dusty-blue: #505ebd;
+$navy: #2e485b;
+$teal: #46a8a5;
+$orange: #d75502;
+$brown: #64381c;
+$black: #000000;
+$grey: #707070;
+
+//fonts
+
+$adelle: "adelle";
+$gothic: "alternate-gothic-no-1-d";
+$chaparral: "chaparral-pro";
 
 /* #Basic Styles
 ================================================== */
 body {
-	background: #ffffff url("assets/img/SA_backgroundpattern.jpg") repeat;
-
 	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
  }
