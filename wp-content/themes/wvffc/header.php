@@ -39,6 +39,16 @@
           <div id="search">
             <i class="fa fa-search"></i>
           </div>
+          <div id="search-box">
+              <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
+              <div class="search-box-input">
+                <input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
+              </div>
+              <div class="search-box-button">
+                <input type="submit" id="searchsubmit" value="Go »" class="btn" />
+              </div>
+              </form>
+          </div>
       </div>
       <div id="donate">
         <span>Donate</span>
