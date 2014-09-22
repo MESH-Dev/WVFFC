@@ -86,24 +86,19 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  background: #707070;
-  border: 1px solid #472A2B;
-  outline: 1px solid #472A2B;
-  outline-offset: -4px;
-  padding: 5px 35px;
-  color: #472A2B;
-  display: inline-block;
-  font-size: 12px;
+  background: #46a8a5;
+  color: #2e485b;
+  display: inline;
+  font-size: 20px;
   font-weight: 300;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
-  margin-bottom: 10px;
-  line-height: 21px;
-  font-family: "Oswald", sans-serif;
+  font-family: "alternate-gothic-no-1-d", sans-serif;
+  border: none;
 }
 
-/* line 80, assets/sass/_base.scss */
+/* line 75, assets/sass/_base.scss */
 a.button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -113,7 +108,7 @@ input[type="button"]:hover {
   color: #F1E3C2;
 }
 
-/* line 90, assets/sass/_base.scss */
+/* line 85, assets/sass/_base.scss */
 a.button:active,
 button:active,
 input[type="submit"]:active,
@@ -123,7 +118,7 @@ input[type="button"]:active {
   color: #F1E3C2;
 }
 
-/* line 98, assets/sass/_base.scss */
+/* line 93, assets/sass/_base.scss */
 .button.callout-btn,
 button.callout-btn,
 input[type="submit"].callout-btn,
@@ -134,7 +129,7 @@ input[type="button"].callout-btn {
   text-align: center;
   padding: 10px 35px;
 }
-/* line 108, assets/sass/_base.scss */
+/* line 103, assets/sass/_base.scss */
 .button.callout-btn span.callout,
 button.callout-btn span.callout,
 input[type="submit"].callout-btn span.callout,
@@ -147,7 +142,7 @@ input[type="button"].callout-btn span.callout {
   width: 100%;
 }
 
-/* line 117, assets/sass/_base.scss */
+/* line 112, assets/sass/_base.scss */
 .button.full-width,
 button.full-width,
 input[type="submit"].full-width,
@@ -161,17 +156,17 @@ input[type="button"].full-width {
 
 /* #Forms
 ================================================== */
-/* line 135, assets/sass/_base.scss */
+/* line 130, assets/sass/_base.scss */
 form {
   margin-bottom: 20px;
 }
 
-/* line 137, assets/sass/_base.scss */
+/* line 132, assets/sass/_base.scss */
 fieldset {
   margin-bottom: 20px;
 }
 
-/* line 139, assets/sass/_base.scss */
+/* line 134, assets/sass/_base.scss */
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -181,22 +176,20 @@ select {
   border: 1px solid #FFF;
   padding: 6px 4px;
   outline: none;
-  font: 14px/26px "Open Sans", Helvetica, Arial, sans-serif;
-  color: #472A2B;
-  margin: 0;
-  width: 210px;
-  max-width: 100%;
+  font-family: "chaparral-pro";
+  font-size: 20px;
+  font-style: italic;
+  color: #000000;
   display: block;
-  margin-bottom: 20px;
   background: #fff;
 }
 
-/* line 156, assets/sass/_base.scss */
+/* line 149, assets/sass/_base.scss */
 select {
   padding: 0;
 }
 
-/* line 158, assets/sass/_base.scss */
+/* line 151, assets/sass/_base.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -209,12 +202,12 @@ textarea:focus {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 168, assets/sass/_base.scss */
+/* line 161, assets/sass/_base.scss */
 textarea {
   min-height: 60px;
 }
 
-/* line 170, assets/sass/_base.scss */
+/* line 163, assets/sass/_base.scss */
 label,
 legend {
   display: block;
@@ -222,17 +215,17 @@ legend {
   font-size: 14px;
 }
 
-/* line 175, assets/sass/_base.scss */
+/* line 168, assets/sass/_base.scss */
 select {
   width: 220px;
 }
 
-/* line 177, assets/sass/_base.scss */
+/* line 170, assets/sass/_base.scss */
 input[type="checkbox"] {
   display: inline;
 }
 
-/* line 179, assets/sass/_base.scss */
+/* line 172, assets/sass/_base.scss */
 label span,
 legend span {
   font-weight: normal;
@@ -242,7 +235,7 @@ legend span {
 
 /* #Images
 ================================================== */
-/* line 188, assets/sass/_base.scss */
+/* line 181, assets/sass/_base.scss */
 img.scale-with-grid {
   max-width: 100%;
   height: auto;
@@ -250,60 +243,60 @@ img.scale-with-grid {
 
 /* WordPress Image Styles
    ========================================================================== */
-/* line 195, assets/sass/_base.scss */
+/* line 188, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 196, assets/sass/_base.scss */
+/* line 189, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 197, assets/sass/_base.scss */
+/* line 190, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 198, assets/sass/_base.scss */
+/* line 191, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 199, assets/sass/_base.scss */
+/* line 192, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 200, assets/sass/_base.scss */
+/* line 193, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 201, assets/sass/_base.scss */
+/* line 194, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 202, assets/sass/_base.scss */
+/* line 195, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 203, assets/sass/_base.scss */
+/* line 196, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 204, assets/sass/_base.scss */
+/* line 197, assets/sass/_base.scss */
 .wp-caption {
   background: #FFF;
   border: 1px solid #472A2B;
@@ -312,22 +305,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 205, assets/sass/_base.scss */
+/* line 198, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 206, assets/sass/_base.scss */
+/* line 199, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 207, assets/sass/_base.scss */
+/* line 200, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 208, assets/sass/_base.scss */
+/* line 201, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -337,7 +330,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 209, assets/sass/_base.scss */
+/* line 202, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text, .gallery-caption {
   font-size: 11px;
   line-height: 17px;
@@ -345,7 +338,7 @@ a img.aligncenter {
   padding: 0 4px 5px;
 }
 
-/* line 212, assets/sass/_base.scss */
+/* line 205, assets/sass/_base.scss */
 .add-bottom {
   margin-bottom: 20px !important;
 }
@@ -1520,10 +1513,48 @@ header .main-nav #mainNav #search {
   display: inline;
   float: right;
   color: white;
-  margin-top: 25px;
-  margin-right: 25px;
+  padding: 25px 25px 25px 20px;
+  cursor: pointer;
+}
+/* line 37, assets/sass/_layout.scss */
+header .main-nav #mainNav #search-box {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 75px;
+  z-index: 1;
+  width: 332px;
+}
+/* line 38, assets/sass/_layout.scss */
+header .main-nav #mainNav #search-box .search-box-input {
+  background-color: #505e6d;
+  display: inline-block;
+  float: left;
+  width: 249px;
+  padding: 10px;
+  height: 44px;
 }
 /* line 39, assets/sass/_layout.scss */
+header .main-nav #mainNav #search-box .search-box-input input {
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/* line 41, assets/sass/_layout.scss */
+header .main-nav #mainNav #search-box .search-box-button {
+  background-color: #d75502;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+/* line 42, assets/sass/_layout.scss */
+header .main-nav #mainNav #search-box .search-box-button input {
+  background: none;
+  color: white;
+  padding: 18px;
+}
+/* line 47, assets/sass/_layout.scss */
 header .main-nav #donate {
   float: left;
   background-color: #46a8a5;
@@ -1533,7 +1564,7 @@ header .main-nav #donate {
   font-size: 22px;
   height: 100%;
 }
-/* line 40, assets/sass/_layout.scss */
+/* line 48, assets/sass/_layout.scss */
 header .main-nav #donate span {
   color: #2e485b;
   text-align: center;
@@ -1547,45 +1578,45 @@ header .main-nav #donate span {
 ================================================== */
 /* Homepage Styles
 ================================================== */
-/* line 59, assets/sass/_layout.scss */
+/* line 67, assets/sass/_layout.scss */
 .home-callout {
   background-color: #505e6d;
   width: 35%;
   height: 345px;
   float: left;
 }
-/* line 60, assets/sass/_layout.scss */
+/* line 68, assets/sass/_layout.scss */
 .home-callout .home-callout-text {
   color: white;
   padding: 37px;
   font-size: 20px;
   line-height: 30px;
 }
-/* line 61, assets/sass/_layout.scss */
+/* line 69, assets/sass/_layout.scss */
 .home-callout .home-callout-text .highlight {
   color: #46a8a5;
 }
 
-/* line 64, assets/sass/_layout.scss */
+/* line 72, assets/sass/_layout.scss */
 .home-image {
   width: 65%;
   float: left;
   height: 345px;
   overflow: hidden;
 }
-/* line 65, assets/sass/_layout.scss */
+/* line 73, assets/sass/_layout.scss */
 .home-image img {
   max-width: 100%;
 }
 
-/* line 68, assets/sass/_layout.scss */
+/* line 76, assets/sass/_layout.scss */
 .home-excerpt {
   border-top: 10px solid #505e6d;
   padding-top: 15px;
   margin-top: 15px;
 }
 
-/* line 71, assets/sass/_layout.scss */
+/* line 79, assets/sass/_layout.scss */
 footer .top-footer {
   background-image: url("assets/img/footer.jpg");
   background-repeat: no-repeat;
@@ -1593,7 +1624,7 @@ footer .top-footer {
   width: 100%;
   margin-top: 10px;
 }
-/* line 72, assets/sass/_layout.scss */
+/* line 80, assets/sass/_layout.scss */
 footer .top-footer .top-footer-box {
   border: 4px solid white;
   margin-top: 13px;
@@ -1606,18 +1637,18 @@ footer .top-footer .top-footer-box {
   text-align: center;
   padding: 16px 18px;
 }
-/* line 74, assets/sass/_layout.scss */
+/* line 82, assets/sass/_layout.scss */
 footer .bottom-footer {
   font-family: "chaparral-pro";
   font-size: 12px;
   line-height: 18px;
   padding: 14px;
 }
-/* line 75, assets/sass/_layout.scss */
+/* line 83, assets/sass/_layout.scss */
 footer .bottom-footer .bottom-footer-left {
   float: left;
 }
-/* line 76, assets/sass/_layout.scss */
+/* line 84, assets/sass/_layout.scss */
 footer .bottom-footer .bottom-footer-right {
   float: right;
   text-align: right;

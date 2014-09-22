@@ -6,4 +6,8 @@ jQuery(document).ready(function($){
 
   try{Typekit.load();}catch(e){}
 
+  $("#search").click(function() {
+    $("#search-box").toggle();
+  });
+
 });
