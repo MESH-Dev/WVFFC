@@ -1415,7 +1415,7 @@ header .main-nav #logo {
   float: left;
   background-image: url("assets/img/header.png");
   background-repeat: no-repeat;
-  width: 360px;
+  width: 35%;
   height: 100%;
 }
 /* line 12, assets/sass/_layout.scss */
@@ -1427,12 +1427,11 @@ header .main-nav #mainNav {
   display: inline;
   float: left;
   background-color: #d75502;
-  width: 560px;
+  width: 55%;
   height: 100%;
   font-family: "alternate-gothic-no-1-d";
   text-transform: uppercase;
   font-size: 22px;
-  /* ul li:hover { border-bottom: 4px solid white;} */
 }
 /* line 16, assets/sass/_layout.scss */
 header .main-nav #mainNav ul {
@@ -1448,7 +1447,7 @@ header .main-nav #mainNav ul li {
   padding: 22px 16px;
 }
 /* line 18, assets/sass/_layout.scss */
-header .main-nav #mainNav ul li.current_page_item a, header .main-nav #mainNav ul li.current_page_ancestor a {
+header .main-nav #mainNav ul li.current_page_item a {
   border-bottom: 5px solid white;
 }
 /* line 19, assets/sass/_layout.scss */
@@ -1460,39 +1459,59 @@ header .main-nav #mainNav ul li:hover:after {
   z-index: 2;
 }
 /* line 20, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li:last-child:hover:after {
+  display: none;
+}
+/* line 21, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li a {
   color: white;
 }
-/* line 22, assets/sass/_layout.scss */
+/* line 23, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul {
   display: none;
   position: absolute;
   left: 0;
   z-index: 1;
   background-color: white;
-  margin-left: 0px;
+  margin-left: 255px;
+  padding-left: 15px;
 }
 /* line 24, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li ul:before {
+  content: 'Qualifying Language for Item >';
+  position: absolute;
+  left: -255px;
+  z-index: 2;
+  font-family: "chaparral-pro";
+  font-style: italic;
+  text-transform: none;
+  background-color: white;
+}
+/* line 26, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li:hover:after {
   display: none;
 }
-/* line 25, assets/sass/_layout.scss */
+/* line 27, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li:hover ul {
   display: block;
 }
-/* line 27, assets/sass/_layout.scss */
+/* line 29, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li.current_page_ancestor ul {
   display: block;
 }
-/* line 28, assets/sass/_layout.scss */
+/* line 30, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li.current_page_item a {
   border-bottom: 5px solid #d75502;
 }
-/* line 30, assets/sass/_layout.scss */
+/* line 32, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li {
   display: inline;
 }
-/* line 31, assets/sass/_layout.scss */
+/* line 33, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li ul li:hover a {
+  color: #64381c;
+}
+/* line 34, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li a {
   color: #d75502;
 }
@@ -1508,7 +1527,7 @@ header .main-nav #mainNav #search {
 header .main-nav #donate {
   float: left;
   background-color: #46a8a5;
-  width: 100px;
+  width: 10%;
   font-family: "alternate-gothic-no-1-d";
   text-transform: uppercase;
   font-size: 22px;
@@ -1528,6 +1547,82 @@ header .main-nav #donate span {
 ================================================== */
 /* Homepage Styles
 ================================================== */
+/* line 59, assets/sass/_layout.scss */
+.home-callout {
+  background-color: #505e6d;
+  width: 35%;
+  height: 345px;
+  float: left;
+}
+/* line 60, assets/sass/_layout.scss */
+.home-callout .home-callout-text {
+  color: white;
+  padding: 37px;
+  font-size: 20px;
+  line-height: 30px;
+}
+/* line 61, assets/sass/_layout.scss */
+.home-callout .home-callout-text .highlight {
+  color: #46a8a5;
+}
+
+/* line 64, assets/sass/_layout.scss */
+.home-image {
+  width: 65%;
+  float: left;
+  height: 345px;
+  overflow: hidden;
+}
+/* line 65, assets/sass/_layout.scss */
+.home-image img {
+  max-width: 100%;
+}
+
+/* line 68, assets/sass/_layout.scss */
+.home-excerpt {
+  border-top: 10px solid #505e6d;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+/* line 71, assets/sass/_layout.scss */
+footer .top-footer {
+  background-image: url("assets/img/footer.jpg");
+  background-repeat: no-repeat;
+  height: 168px;
+  width: 100%;
+  margin-top: 10px;
+}
+/* line 72, assets/sass/_layout.scss */
+footer .top-footer .top-footer-box {
+  border: 4px solid white;
+  margin-top: 13px;
+  height: 102px;
+  font-family: "alternate-gothic-no-1-d", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 26px;
+  line-height: 26px;
+  text-align: center;
+  padding: 16px 18px;
+}
+/* line 74, assets/sass/_layout.scss */
+footer .bottom-footer {
+  font-family: "chaparral-pro";
+  font-size: 12px;
+  line-height: 18px;
+  padding: 14px;
+}
+/* line 75, assets/sass/_layout.scss */
+footer .bottom-footer .bottom-footer-left {
+  float: left;
+}
+/* line 76, assets/sass/_layout.scss */
+footer .bottom-footer .bottom-footer-right {
+  float: right;
+  text-align: right;
+}
+
 /* PAGE Styles
 ================================================== */
 /* FOOTER Styles
