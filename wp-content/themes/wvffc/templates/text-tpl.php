@@ -9,14 +9,15 @@
 
   <div class="container page-content">
 
+    <?php the_breadcrumb(); ?>
+
     <div class="eight columns">
-        <?php the_breadcrumb(); ?>
         <h1><?php the_title(); ?></h1>
         <?php the_content(); ?>
     </div>
 
     <div class="four columns">
-
+        <?php the_field('sidebar_content'); ?>
     </div>
 
   </div><!-- End of Container -->
