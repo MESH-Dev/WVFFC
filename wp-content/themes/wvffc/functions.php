@@ -1,4 +1,7 @@
 <?php
+
+  include_once('functions/footer-widgets.php');
+
   //enqueue scripts and styles *use production assets. Dev assets are located in assets/css and assets/js
   function WPS_scripts() {
   	wp_enqueue_style('font-awesome','//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
@@ -76,14 +79,14 @@
 
   //widgets
   register_sidebar(array(
-	   'name'          => __( 'Footer - Left' ),
-	   'id'            => 'footer-left',
+	   'name'          => __( 'Footer' ),
+	   'id'            => 'footer-widgets',
 	   'description'   => '',
      'class'         => '',
 	   'before_widget' => '',
 	   'after_widget'  => '',
-	   'before_title'  => '<h2>',
-	   'after_title'   => '</h2>' ));
+	   'before_title'  => '',
+	   'after_title'   => '' ));
 
   //editor style
   add_editor_style('assets/wp-admin/custom-editor-style.css');

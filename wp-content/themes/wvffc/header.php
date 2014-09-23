@@ -42,7 +42,7 @@
           <div id="search-box">
               <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/">
               <div class="search-box-input">
-                <input type="text" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
+                <input type="text" placeholder="Search" value="<?php echo wp_specialchars($s, 1); ?>" name="s" id="s" />
               </div>
               <div class="search-box-button">
                 <input type="submit" id="searchsubmit" value="Go »" class="btn" />
@@ -51,7 +51,7 @@
           </div>
       </div>
       <div id="donate">
-        <span>Donate</span>
+        <span><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ULU3JY82Z5M5A" target="_blank">Donate</a></span>
       </div>
     </div>
 
