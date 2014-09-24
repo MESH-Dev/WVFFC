@@ -10,4 +10,27 @@ jQuery(document).ready(function($){
     $("#search-box").toggle();
   });
 
+
+  //Front page link hover and slideout
+
+  $('.home-callout a').each(function( index ){
+
+  	$(this).click(function() {
+
+      if($('.slide').eq(index).hasClass('active')) {
+        $('.active').fadeOut();
+        $('.active').removeClass('active');
+      } else {
+        $('.active').fadeOut();
+        $('.active').removeClass('active');
+        $('.slide').eq(index).fadeIn();
+        $('.slide').eq(index).addClass('active');
+      }
+
+  	});
+
+
+  });
+
+
 });

@@ -369,6 +369,7 @@ h1 {
   color: #2e485b;
   font-size: 64px;
   line-height: 64px;
+  margin-bottom: 10px;
 }
 
 /* line 7, assets/sass/_typography.scss */
@@ -378,6 +379,7 @@ h2 {
   color: #d75502;
   font-size: 40px;
   line-height: 40px;
+  margin-bottom: 10px;
 }
 
 /* line 8, assets/sass/_typography.scss */
@@ -386,6 +388,7 @@ h3 {
   color: #2e485b;
   font-size: 20px;
   line-height: 30px;
+  margin-bottom: 10px;
 }
 
 /* line 9, assets/sass/_typography.scss */
@@ -395,6 +398,7 @@ h4 {
   color: #d75502;
   font-size: 22px;
   line-height: 22px;
+  margin-bottom: 10px;
 }
 
 /* line 10, assets/sass/_typography.scss */
@@ -404,6 +408,7 @@ h5 {
   color: #46a8a5;
   font-size: 20px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 /* line 11, assets/sass/_typography.scss */
@@ -437,15 +442,17 @@ strong {
 /*	Blockquotes  */
 /* line 21, assets/sass/_typography.scss */
 blockquote, blockquote p {
-  font: 22px/30px "Stint Ultra Expanded", cursive;
-  color: #E31B23;
-  letter-spacing: 0.08em;
+  font-family: "chaparral-pro";
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  background-color: #505e6d;
 }
 
 /* line 22, assets/sass/_typography.scss */
 blockquote {
   margin: 20px 0 20px 0px;
-  padding: 0;
+  padding: 30px;
 }
 
 /* line 23, assets/sass/_typography.scss */
@@ -1444,12 +1451,13 @@ header .main-nav #mainNav ul li.current_page_item a {
   border-bottom: 5px solid white;
 }
 /* line 19, assets/sass/_layout.scss */
-header .main-nav #mainNav ul li:hover:after {
+header .main-nav #mainNav ul#menu-main-navigation > li:hover:after {
   content: url("assets/img/arrow.png");
   position: absolute;
   top: 45px;
   margin-left: -4%;
   z-index: 2;
+  display: inline;
 }
 /* line 20, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li:last-child:hover:after {
@@ -1468,6 +1476,7 @@ header .main-nav #mainNav ul li ul {
   background-color: white;
   margin-left: 255px;
   padding-left: 15px;
+  width: 100%;
 }
 /* line 24, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul:before {
@@ -1481,15 +1490,15 @@ header .main-nav #mainNav ul li ul:before {
   background-color: white;
 }
 /* line 26, assets/sass/_layout.scss */
-header .main-nav #mainNav ul li ul li:hover:after {
-  display: none;
-}
-/* line 27, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li:hover ul {
   display: block;
 }
-/* line 29, assets/sass/_layout.scss */
+/* line 28, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li.current_page_ancestor ul {
+  display: block;
+}
+/* line 29, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li.current_page_item ul {
   display: block;
 }
 /* line 30, assets/sass/_layout.scss */
@@ -1505,10 +1514,14 @@ header .main-nav #mainNav ul li ul li:hover a {
   color: #64381c;
 }
 /* line 34, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li ul li:hover:after {
+  display: none;
+}
+/* line 35, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li a {
   color: #d75502;
 }
-/* line 36, assets/sass/_layout.scss */
+/* line 37, assets/sass/_layout.scss */
 header .main-nav #mainNav #search {
   display: inline;
   float: right;
@@ -1516,7 +1529,7 @@ header .main-nav #mainNav #search {
   padding: 25px 25px 25px 20px;
   cursor: pointer;
 }
-/* line 37, assets/sass/_layout.scss */
+/* line 38, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box {
   display: none;
   position: absolute;
@@ -1525,7 +1538,7 @@ header .main-nav #mainNav #search-box {
   z-index: 1;
   width: 332px;
 }
-/* line 38, assets/sass/_layout.scss */
+/* line 39, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-input {
   background-color: #505e6d;
   display: inline-block;
@@ -1534,27 +1547,31 @@ header .main-nav #mainNav #search-box .search-box-input {
   padding: 10px;
   height: 44px;
 }
-/* line 39, assets/sass/_layout.scss */
+/* line 40, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-input input {
   width: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-/* line 41, assets/sass/_layout.scss */
+/* line 42, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-button {
   background-color: #d75502;
   display: inline-block;
   float: left;
   text-align: center;
 }
-/* line 42, assets/sass/_layout.scss */
+/* line 43, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-button input {
   background: none;
   color: white;
   padding: 18px;
 }
-/* line 47, assets/sass/_layout.scss */
+/* line 46, assets/sass/_layout.scss */
+header .main-nav #mainNav #search-box .search-box-button:hover input {
+  color: #2e485b;
+}
+/* line 51, assets/sass/_layout.scss */
 header .main-nav #donate {
   float: left;
   background-color: #46a8a5;
@@ -1563,60 +1580,128 @@ header .main-nav #donate {
   text-transform: uppercase;
   font-size: 22px;
   height: 100%;
+  cursor: pointer;
 }
-/* line 48, assets/sass/_layout.scss */
+/* line 52, assets/sass/_layout.scss */
 header .main-nav #donate span {
   color: #2e485b;
   text-align: center;
   display: block;
   margin: 28px auto;
 }
+/* line 53, assets/sass/_layout.scss */
+header .main-nav #donate span a {
+  color: #2e485b;
+}
+/* line 56, assets/sass/_layout.scss */
+header .main-nav #donate:hover {
+  background-color: #2e485b;
+}
+/* line 57, assets/sass/_layout.scss */
+header .main-nav #donate:hover span {
+  color: #46a8a5;
+}
+/* line 58, assets/sass/_layout.scss */
+header .main-nav #donate:hover span a {
+  color: #46a8a5;
+}
 
 /* Navigation Styles
 ================================================== */
 /* Responsive Menu
 ================================================== */
+/* Breadcrumbs
+================================================== */
+/* line 78, assets/sass/_layout.scss */
+#breadcrumbs {
+  list-style: none;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  overflow: hidden;
+}
+/* line 79, assets/sass/_layout.scss */
+#breadcrumbs li {
+  float: left;
+  margin-right: 15px;
+  font-family: "chaparral-pro";
+  font-style: italic;
+  font-size: 14px;
+  color: #707070;
+}
+/* line 80, assets/sass/_layout.scss */
+#breadcrumbs .separator {
+  font-weight: 700;
+  font-size: 20px;
+  color: #999;
+}
+
 /* Homepage Styles
 ================================================== */
-/* line 67, assets/sass/_layout.scss */
+/* line 87, assets/sass/_layout.scss */
 .home-callout {
   background-color: #505e6d;
   width: 35%;
   height: 345px;
   float: left;
 }
-/* line 68, assets/sass/_layout.scss */
+/* line 88, assets/sass/_layout.scss */
 .home-callout .home-callout-text {
   color: white;
   padding: 37px;
   font-size: 20px;
   line-height: 30px;
 }
-/* line 69, assets/sass/_layout.scss */
+/* line 89, assets/sass/_layout.scss */
 .home-callout .home-callout-text .highlight {
   color: #46a8a5;
 }
 
-/* line 72, assets/sass/_layout.scss */
+/* line 92, assets/sass/_layout.scss */
 .home-image {
   width: 65%;
   float: left;
   height: 345px;
   overflow: hidden;
 }
-/* line 73, assets/sass/_layout.scss */
+/* line 93, assets/sass/_layout.scss */
 .home-image img {
   max-width: 100%;
 }
+/* line 94, assets/sass/_layout.scss */
+.home-image .slide {
+  position: absolute;
+  top: 15px;
+  color: white;
+  background-color: rgba(70, 168, 165, 0.8);
+  padding: 25px;
+  margin: 25px;
+  display: none;
+}
+/* line 95, assets/sass/_layout.scss */
+.home-image .slide h2 {
+  color: #2e485b;
+}
+/* line 96, assets/sass/_layout.scss */
+.home-image .slide a {
+  text-transform: uppercase;
+  color: #d75502;
+  font-family: "alternate-gothic-no-1-d";
+  font-size: 20px;
+  line-height: 20px;
+}
+/* line 97, assets/sass/_layout.scss */
+.home-image .slide a:hover {
+  color: #2e485b;
+}
 
-/* line 76, assets/sass/_layout.scss */
+/* line 101, assets/sass/_layout.scss */
 .home-excerpt {
   border-top: 10px solid #505e6d;
   padding-top: 15px;
   margin-top: 15px;
 }
 
-/* line 79, assets/sass/_layout.scss */
+/* line 104, assets/sass/_layout.scss */
 footer .top-footer {
   background-image: url("assets/img/footer.jpg");
   background-repeat: no-repeat;
@@ -1624,10 +1709,11 @@ footer .top-footer {
   width: 100%;
   margin-top: 10px;
 }
-/* line 80, assets/sass/_layout.scss */
+/* line 105, assets/sass/_layout.scss */
 footer .top-footer .top-footer-box {
   border: 4px solid white;
   margin-top: 13px;
+  margin-bottom: 13px;
   height: 102px;
   font-family: "alternate-gothic-no-1-d", sans-serif;
   text-transform: uppercase;
@@ -1637,25 +1723,112 @@ footer .top-footer .top-footer-box {
   text-align: center;
   padding: 16px 18px;
 }
-/* line 82, assets/sass/_layout.scss */
+/* line 106, assets/sass/_layout.scss */
+footer .top-footer .top-footer-box img {
+  margin-top: 5px;
+}
+/* line 109, assets/sass/_layout.scss */
 footer .bottom-footer {
   font-family: "chaparral-pro";
   font-size: 12px;
   line-height: 18px;
   padding: 14px;
 }
-/* line 83, assets/sass/_layout.scss */
+/* line 110, assets/sass/_layout.scss */
 footer .bottom-footer .bottom-footer-left {
   float: left;
 }
-/* line 84, assets/sass/_layout.scss */
+/* line 111, assets/sass/_layout.scss */
 footer .bottom-footer .bottom-footer-right {
   float: right;
   text-align: right;
 }
+/* line 113, assets/sass/_layout.scss */
+footer .two {
+  margin: 0px !important;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* line 114, assets/sass/_layout.scss */
+footer .two:hover {
+  background-color: #46a8a5;
+  opacity: 0.7;
+}
 
 /* PAGE Styles
 ================================================== */
+/* line 120, assets/sass/_layout.scss */
+.page-content {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+/* line 122, assets/sass/_layout.scss */
+.content-block {
+  border-top: 10px solid #2e485b;
+}
+/* line 123, assets/sass/_layout.scss */
+.content-block h2 {
+  padding-top: 25px;
+}
+/* line 124, assets/sass/_layout.scss */
+.content-block h4 {
+  padding-top: 10px;
+  margin-bottom: 3px;
+}
+/* line 125, assets/sass/_layout.scss */
+.content-block .content-block-image {
+  overflow: hidden;
+  height: 100px;
+}
+
+/* line 128, assets/sass/_layout.scss */
+.content-callout {
+  background-color: #505e6d;
+  width: 35%;
+  height: 345px;
+  float: right;
+}
+/* line 129, assets/sass/_layout.scss */
+.content-callout .content-callout-text {
+  color: white;
+  padding: 37px;
+  font-size: 20px;
+  line-height: 30px;
+}
+/* line 130, assets/sass/_layout.scss */
+.content-callout .content-callout-text .highlight {
+  color: #46a8a5;
+}
+
+/* line 133, assets/sass/_layout.scss */
+.content-image {
+  width: 65%;
+  float: left;
+  height: 345px;
+  overflow: hidden;
+}
+/* line 134, assets/sass/_layout.scss */
+.content-image img {
+  max-width: 100%;
+}
+
+/* line 137, assets/sass/_layout.scss */
+.resource-left {
+  display: inline-block;
+}
+
+/* line 138, assets/sass/_layout.scss */
+.resource-right {
+  float: right;
+}
+/* line 139, assets/sass/_layout.scss */
+.resource-right .resource-right-textbox {
+  padding: 15px;
+  color: white;
+  background-color: #2e485b;
+}
+
 /* FOOTER Styles
 ================================================== */
 /* #Page Styles
