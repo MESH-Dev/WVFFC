@@ -12,6 +12,7 @@
 
       <div class="home-image">
         <img src="<?php the_field('homepage_image') ?>" />
+        <?php get_template_part( 'partials/home', 'slideouts' ); ?>
       </div>
   </div>
   <div class="row">

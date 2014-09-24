@@ -91,6 +91,11 @@ header{
 }
 .home-image { width: 65%; float: left; height: 345px; overflow: hidden;
 	img { max-width: 100%; }
+	.slide { position: absolute; top: 15px; color: white; background-color:rgba(70, 168, 165, 0.8); padding: 25px; margin: 25px; display: none;
+		h2 { color: $navy; }
+		a { text-transform: uppercase; color: $orange; font-family: $gothic; font-size: 20px; line-height: 20px; }
+		a:hover { color: $navy; }
+	}
 }
 
 .home-excerpt { border-top: 10px solid $dusty-blue; padding-top: 15px; margin-top: 15px; }
