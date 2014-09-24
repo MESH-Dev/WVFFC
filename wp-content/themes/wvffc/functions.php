@@ -101,6 +101,16 @@
 	   echo 'Theme developed by <a href="http://pateason.com">Pat Eason</a>.';
   } add_filter('admin_footer_text', 'WPS_footer_admin');
 
+  function custom_excerpt_length( $length ) {
+  	return 11;
+  }
+  add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+  function new_excerpt_more( $more ) {
+  	return '... <br/><a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
+  }
+  add_filter( 'excerpt_more', 'new_excerpt_more' );
+
   //disable code editors
   define('DISALLOW_FILE_EDIT', true);
 

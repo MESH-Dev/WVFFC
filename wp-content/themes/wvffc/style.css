@@ -1589,12 +1589,20 @@ header .main-nav #donate span {
   display: block;
   margin: 28px auto;
 }
-/* line 54, assets/sass/_layout.scss */
+/* line 53, assets/sass/_layout.scss */
+header .main-nav #donate span a {
+  color: #2e485b;
+}
+/* line 56, assets/sass/_layout.scss */
 header .main-nav #donate:hover {
   background-color: #2e485b;
 }
-/* line 55, assets/sass/_layout.scss */
+/* line 57, assets/sass/_layout.scss */
 header .main-nav #donate:hover span {
+  color: #46a8a5;
+}
+/* line 58, assets/sass/_layout.scss */
+header .main-nav #donate:hover span a {
   color: #46a8a5;
 }
 
@@ -1604,14 +1612,14 @@ header .main-nav #donate:hover span {
 ================================================== */
 /* Breadcrumbs
 ================================================== */
-/* line 74, assets/sass/_layout.scss */
+/* line 78, assets/sass/_layout.scss */
 #breadcrumbs {
   list-style: none;
   margin-bottom: 20px;
   margin-left: 20px;
   overflow: hidden;
 }
-/* line 75, assets/sass/_layout.scss */
+/* line 79, assets/sass/_layout.scss */
 #breadcrumbs li {
   float: left;
   margin-right: 15px;
@@ -1620,7 +1628,7 @@ header .main-nav #donate:hover span {
   font-size: 14px;
   color: #707070;
 }
-/* line 76, assets/sass/_layout.scss */
+/* line 80, assets/sass/_layout.scss */
 #breadcrumbs .separator {
   font-weight: 700;
   font-size: 20px;
@@ -1629,45 +1637,45 @@ header .main-nav #donate:hover span {
 
 /* Homepage Styles
 ================================================== */
-/* line 83, assets/sass/_layout.scss */
+/* line 87, assets/sass/_layout.scss */
 .home-callout {
   background-color: #505e6d;
   width: 35%;
   height: 345px;
   float: left;
 }
-/* line 84, assets/sass/_layout.scss */
+/* line 88, assets/sass/_layout.scss */
 .home-callout .home-callout-text {
   color: white;
   padding: 37px;
   font-size: 20px;
   line-height: 30px;
 }
-/* line 85, assets/sass/_layout.scss */
+/* line 89, assets/sass/_layout.scss */
 .home-callout .home-callout-text .highlight {
   color: #46a8a5;
 }
 
-/* line 88, assets/sass/_layout.scss */
+/* line 92, assets/sass/_layout.scss */
 .home-image {
   width: 65%;
   float: left;
   height: 345px;
   overflow: hidden;
 }
-/* line 89, assets/sass/_layout.scss */
+/* line 93, assets/sass/_layout.scss */
 .home-image img {
   max-width: 100%;
 }
 
-/* line 92, assets/sass/_layout.scss */
+/* line 96, assets/sass/_layout.scss */
 .home-excerpt {
   border-top: 10px solid #505e6d;
   padding-top: 15px;
   margin-top: 15px;
 }
 
-/* line 95, assets/sass/_layout.scss */
+/* line 99, assets/sass/_layout.scss */
 footer .top-footer {
   background-image: url("assets/img/footer.jpg");
   background-repeat: no-repeat;
@@ -1675,7 +1683,7 @@ footer .top-footer {
   width: 100%;
   margin-top: 10px;
 }
-/* line 96, assets/sass/_layout.scss */
+/* line 100, assets/sass/_layout.scss */
 footer .top-footer .top-footer-box {
   border: 4px solid white;
   margin-top: 13px;
@@ -1689,33 +1697,33 @@ footer .top-footer .top-footer-box {
   text-align: center;
   padding: 16px 18px;
 }
-/* line 97, assets/sass/_layout.scss */
+/* line 101, assets/sass/_layout.scss */
 footer .top-footer .top-footer-box img {
   margin-top: 5px;
 }
-/* line 100, assets/sass/_layout.scss */
+/* line 104, assets/sass/_layout.scss */
 footer .bottom-footer {
   font-family: "chaparral-pro";
   font-size: 12px;
   line-height: 18px;
   padding: 14px;
 }
-/* line 101, assets/sass/_layout.scss */
+/* line 105, assets/sass/_layout.scss */
 footer .bottom-footer .bottom-footer-left {
   float: left;
 }
-/* line 102, assets/sass/_layout.scss */
+/* line 106, assets/sass/_layout.scss */
 footer .bottom-footer .bottom-footer-right {
   float: right;
   text-align: right;
 }
-/* line 104, assets/sass/_layout.scss */
+/* line 108, assets/sass/_layout.scss */
 footer .two {
   margin: 0px !important;
   padding-right: 15px;
   padding-left: 15px;
 }
-/* line 105, assets/sass/_layout.scss */
+/* line 109, assets/sass/_layout.scss */
 footer .two:hover {
   background-color: #46a8a5;
   opacity: 0.7;
@@ -1723,10 +1731,76 @@ footer .two:hover {
 
 /* PAGE Styles
 ================================================== */
-/* line 111, assets/sass/_layout.scss */
+/* line 115, assets/sass/_layout.scss */
 .page-content {
   margin-top: 80px;
   margin-bottom: 40px;
+}
+
+/* line 117, assets/sass/_layout.scss */
+.content-block {
+  border-top: 10px solid #2e485b;
+}
+/* line 118, assets/sass/_layout.scss */
+.content-block h2 {
+  padding-top: 25px;
+}
+/* line 119, assets/sass/_layout.scss */
+.content-block h4 {
+  padding-top: 10px;
+  margin-bottom: 3px;
+}
+/* line 120, assets/sass/_layout.scss */
+.content-block .content-block-image {
+  overflow: hidden;
+  height: 100px;
+}
+
+/* line 123, assets/sass/_layout.scss */
+.content-callout {
+  background-color: #505e6d;
+  width: 35%;
+  height: 345px;
+  float: right;
+}
+/* line 124, assets/sass/_layout.scss */
+.content-callout .content-callout-text {
+  color: white;
+  padding: 37px;
+  font-size: 20px;
+  line-height: 30px;
+}
+/* line 125, assets/sass/_layout.scss */
+.content-callout .content-callout-text .highlight {
+  color: #46a8a5;
+}
+
+/* line 128, assets/sass/_layout.scss */
+.content-image {
+  width: 65%;
+  float: left;
+  height: 345px;
+  overflow: hidden;
+}
+/* line 129, assets/sass/_layout.scss */
+.content-image img {
+  max-width: 100%;
+}
+
+/* line 132, assets/sass/_layout.scss */
+.resource-left {
+  display: inline-block;
+}
+
+/* line 133, assets/sass/_layout.scss */
+.resource-right {
+  float: right;
+}
+/* line 134, assets/sass/_layout.scss */
+.resource-right .resource-right-textbox {
+  padding: 15px;
+  color: white;
+  background-color: #2e485b;
 }
 
 /* FOOTER Styles

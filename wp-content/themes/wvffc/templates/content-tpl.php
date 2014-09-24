@@ -5,29 +5,68 @@
 
 <?php get_header(); ?>
 
+<div class="container page-content">
+
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-  <?php $banner = 0; get_template_part( 'partials/page', 'banner' ); ?>
+    <div class="row">
+        <div class="content-callout">
+          <div class="content-callout-text">
+            <span><?php the_field('content_header_statement'); ?></span>
+          </div>
+        </div>
 
-
-  <div class="container page-content">
-
-    <div class="eight columns">
-      <?php if (!get_field('banner_image') ) { ?>
-          <h1 class="page-title"><?php the_title(); ?></h1>
-          <?php  } ?>
-      <?php the_content(); ?>
+        <div class="content-image">
+          <img src="<?php the_field('content_header_image') ?>" />
+        </div>
     </div>
 
-    <div class="four columns page-sidebar">
+    <?php
 
-        <?php get_template_part( 'partials/sidebar', 'right' ); ?>
+    // check if the repeater field has rows of data
+    if( have_rows('content') ):
 
-    </div>
+        $i = 1;
 
-  </div><!-- End of Container -->
+     	// loop through the rows of data
+        while ( have_rows('content') ) : the_row();
+
+            // display a sub field value
+
+            if ($i % 3 == 1) {
+              echo '<div class="row">';
+            }
+
+            echo '<div class="four columns content-block">';
+
+              if (get_sub_field('content_image')) {
+                  echo '<img src="'.get_sub_field('content_image').'" />';
+              }
+
+              echo '<h2>'.get_sub_field('content_headline').'</h2>';
+              the_sub_field('content_body');
+              echo '<h5><a href="'.get_sub_field('content_link').'">'.get_sub_field('content_link_text').' »</a></h5>';
+
+            echo '</div>';
+
+            if ($i % 3 == 0) {
+              echo '</div>';
+            }
+
+            $i = $i + 1;
+
+        endwhile;
+
+    else :
+
+        // no rows found
+
+    endif;
+
+    ?>
 
 <?php endwhile; ?>
 
+</div><!-- End of Container -->
 
 <?php get_footer(); ?>
