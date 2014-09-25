@@ -6,6 +6,8 @@
 /* Header Styles
 ================================================== */
 
+#wpadminbar { position: fixed !important; }
+
 header{
 	.main-nav { height: 70px; border-bottom: 5px solid white;
 		#logo { display: inline; float:left; background-image: url('assets/img/header.png'); background-repeat: no-repeat; width: 35%; height: 100%;
@@ -139,6 +141,7 @@ footer {
 	.resource-right-textbox { padding: 15px; color: white; background-color: $navy; }
 }
 
+.read-more img { margin-top: 10px; }
 
 /* FOOTER Styles
 ================================================== */

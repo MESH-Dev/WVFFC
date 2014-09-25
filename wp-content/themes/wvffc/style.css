@@ -920,434 +920,133 @@ li {
 /* #Tablet (Portrait)
 ================================================== */
 /* Note: Design for a width of 768px */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 139, assets/sass/_grid.scss */
-  .container {
-    position: relative;
-    margin: 0 auto;
-    padding: 0;
-    width: 816px;
-    /* Offsets */
-  }
-  /* line 142, assets/sass/_grid.scss */
-  .container .row {
-    margin-bottom: 20px;
-  }
-  /* line 143, assets/sass/_grid.scss */
-  .container .column, .container .columns {
-    /* Base Grid */
-  }
-  /* line 146, assets/sass/_grid.scss */
-  .container .column.one, .container .columns.one {
-    width: 38px;
-  }
-  /* line 147, assets/sass/_grid.scss */
-  .container .column.two, .container .columns.two {
-    width: 106px;
-  }
-  /* line 148, assets/sass/_grid.scss */
-  .container .column.three, .container .columns.three {
-    width: 174px;
-  }
-  /* line 149, assets/sass/_grid.scss */
-  .container .column.four, .container .columns.four {
-    width: 242px;
-  }
-  /* line 150, assets/sass/_grid.scss */
-  .container .column.five, .container .columns.five {
-    width: 310px;
-  }
-  /* line 151, assets/sass/_grid.scss */
-  .container .column.six, .container .columns.six {
-    width: 378px;
-  }
-  /* line 152, assets/sass/_grid.scss */
-  .container .column.seven, .container .columns.seven {
-    width: 446px;
-  }
-  /* line 153, assets/sass/_grid.scss */
-  .container .column.eight, .container .columns.eight {
-    width: 514px;
-  }
-  /* line 154, assets/sass/_grid.scss */
-  .container .column.nine, .container .columns.nine {
-    width: 582px;
-  }
-  /* line 155, assets/sass/_grid.scss */
-  .container .column.ten, .container .columns.ten {
-    width: 650px;
-  }
-  /* line 156, assets/sass/_grid.scss */
-  .container .column.eleven, .container .columns.eleven {
-    width: 718px;
-  }
-  /* line 157, assets/sass/_grid.scss */
-  .container .column.twelve, .container .columns.twelve {
-    width: 786px;
-  }
-  /* line 158, assets/sass/_grid.scss */
-  .container .column.thirteen, .container .columns.thirteen {
-    width: 854px;
-  }
-  /* line 159, assets/sass/_grid.scss */
-  .container .column.fourteen, .container .columns.fourteen {
-    width: 922px;
-  }
-  /* line 160, assets/sass/_grid.scss */
-  .container .column.fifteen, .container .columns.fifteen {
-    width: 990px;
-  }
-  /* line 161, assets/sass/_grid.scss */
-  .container .column.sixteen, .container .columns.sixteen {
-    width: 1058px;
-  }
-  /* line 163, assets/sass/_grid.scss */
-  .container .column.one-third, .container .columns.one-third {
-    width: 242px;
-  }
-  /* line 164, assets/sass/_grid.scss */
-  .container .column.two-thirds, .container .columns.two-thirds {
-    width: 514px;
-  }
-  /* line 169, assets/sass/_grid.scss */
-  .container .offset-by-one {
-    padding-left: 68px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 169, assets/sass/_grid.scss */
-  .container .offset-by-one {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 169, assets/sass/_grid.scss */
-  .container .offset-by-one {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 170, assets/sass/_grid.scss */
-  .container .offset-by-two {
-    padding-left: 136px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 170, assets/sass/_grid.scss */
-  .container .offset-by-two {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 170, assets/sass/_grid.scss */
-  .container .offset-by-two {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 171, assets/sass/_grid.scss */
-  .container .offset-by-three {
-    padding-left: 204px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 171, assets/sass/_grid.scss */
-  .container .offset-by-three {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 171, assets/sass/_grid.scss */
-  .container .offset-by-three {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 172, assets/sass/_grid.scss */
-  .container .offset-by-four {
-    padding-left: 272px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 172, assets/sass/_grid.scss */
-  .container .offset-by-four {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 172, assets/sass/_grid.scss */
-  .container .offset-by-four {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 173, assets/sass/_grid.scss */
-  .container .offset-by-five {
-    padding-left: 340px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 173, assets/sass/_grid.scss */
-  .container .offset-by-five {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 173, assets/sass/_grid.scss */
-  .container .offset-by-five {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 174, assets/sass/_grid.scss */
-  .container .offset-by-six {
-    padding-left: 408px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 174, assets/sass/_grid.scss */
-  .container .offset-by-six {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 174, assets/sass/_grid.scss */
-  .container .offset-by-six {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 175, assets/sass/_grid.scss */
-  .container .offset-by-seven {
-    padding-left: 476px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 175, assets/sass/_grid.scss */
-  .container .offset-by-seven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 175, assets/sass/_grid.scss */
-  .container .offset-by-seven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 176, assets/sass/_grid.scss */
-  .container .offset-by-eight {
-    padding-left: 544px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 176, assets/sass/_grid.scss */
-  .container .offset-by-eight {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 176, assets/sass/_grid.scss */
-  .container .offset-by-eight {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 177, assets/sass/_grid.scss */
-  .container .offset-by-nine {
-    padding-left: 612px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 177, assets/sass/_grid.scss */
-  .container .offset-by-nine {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 177, assets/sass/_grid.scss */
-  .container .offset-by-nine {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 178, assets/sass/_grid.scss */
-  .container .offset-by-ten {
-    padding-left: 680px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 178, assets/sass/_grid.scss */
-  .container .offset-by-ten {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 178, assets/sass/_grid.scss */
-  .container .offset-by-ten {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 179, assets/sass/_grid.scss */
-  .container .offset-by-eleven {
-    padding-left: 748px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 179, assets/sass/_grid.scss */
-  .container .offset-by-eleven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 179, assets/sass/_grid.scss */
-  .container .offset-by-eleven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 180, assets/sass/_grid.scss */
-  .container .offset-by-twelve {
-    padding-left: 816px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 180, assets/sass/_grid.scss */
-  .container .offset-by-twelve {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 180, assets/sass/_grid.scss */
-  .container .offset-by-twelve {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 181, assets/sass/_grid.scss */
-  .container .offset-by-thirteen {
-    padding-left: 884px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 181, assets/sass/_grid.scss */
-  .container .offset-by-thirteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 181, assets/sass/_grid.scss */
-  .container .offset-by-thirteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 182, assets/sass/_grid.scss */
-  .container .offset-by-fourteen {
-    padding-left: 952px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 182, assets/sass/_grid.scss */
-  .container .offset-by-fourteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 182, assets/sass/_grid.scss */
-  .container .offset-by-fourteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 183, assets/sass/_grid.scss */
-  .container .offset-by-fifteen {
-    padding-left: 1020px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 183, assets/sass/_grid.scss */
-  .container .offset-by-fifteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) and (max-width: 479px) {
-  /* line 183, assets/sass/_grid.scss */
-  .container .offset-by-fifteen {
-    padding-left: 0px;
-  }
-}
+    /* @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .container {                      position: relative; margin: 0 auto; padding: 0;
+                                          @include grid-width(\$sk-tablet-col);
 
+            .row                        { margin-bottom: 20px; }
+            .column, .columns           {
+
+                Base Grid
+                &.one                   { @include columns(1, \$sk-tablet-col); }
+                &.two                   { @include columns(2, \$sk-tablet-col); }
+                &.three                 { @include columns(3, \$sk-tablet-col);}
+                &.four                  { @include columns(4, \$sk-tablet-col); }
+                &.five                  { @include columns(5, \$sk-tablet-col); }
+                &.six                   { @include columns(6, \$sk-tablet-col); }
+                &.seven                 { @include columns(7, \$sk-tablet-col); }
+                &.eight                 { @include columns(8, \$sk-tablet-col); }
+                &.nine                  { @include columns(9, \$sk-tablet-col); }
+                &.ten                   { @include columns(10, \$sk-tablet-col); }
+                &.eleven                { @include columns(11, \$sk-tablet-col); }
+                &.twelve                { @include columns(12, \$sk-tablet-col); }
+                &.thirteen              { @include columns(13, \$sk-tablet-col); }
+                &.fourteen              { @include columns(14, \$sk-tablet-col); }
+                &.fifteen               { @include columns(15, \$sk-tablet-col); }
+                &.sixteen               { @include columns(16, \$sk-tablet-col); }
+
+                &.one-third             { @include grid-third-width(1, \$sk-tablet-col); }
+                &.two-thirds            { @include grid-third-width(2, \$sk-tablet-col); }
+
+            } //.column, columns
+
+            Offsets
+            .offset-by-one               { @include column-offset(1, \$sk-tablet-col); }
+            .offset-by-two               { @include column-offset(2, \$sk-tablet-col); }
+            .offset-by-three             { @include column-offset(3, \$sk-tablet-col); }
+            .offset-by-four              { @include column-offset(4, \$sk-tablet-col); }
+            .offset-by-five              { @include column-offset(5, \$sk-tablet-col); }
+            .offset-by-six               { @include column-offset(6, \$sk-tablet-col); }
+            .offset-by-seven             { @include column-offset(7, \$sk-tablet-col); }
+            .offset-by-eight             { @include column-offset(8, \$sk-tablet-col); }
+            .offset-by-nine              { @include column-offset(9, \$sk-tablet-col); }
+            .offset-by-ten               { @include column-offset(10, \$sk-tablet-col); }
+            .offset-by-eleven            { @include column-offset(11, \$sk-tablet-col); }
+            .offset-by-twelve            { @include column-offset(12, \$sk-tablet-col); }
+            .offset-by-thirteen          { @include column-offset(13, \$sk-tablet-col); }
+            .offset-by-fourteen          { @include column-offset(14, \$sk-tablet-col); }
+            .offset-by-fifteen           { @include column-offset(15, \$sk-tablet-col); }
+        } //.container
+    }
+     */
 /*  #Mobile (Portrait)
 ================================================== */
 /* Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) {
-  /* line 194, assets/sass/_grid.scss */
-  .container {
-    width: 300px;
-  }
-  /* line 196, assets/sass/_grid.scss */
-  .container .columns, .container .column {
-    margin-left: 0px;
-    margin-right: 0px;
-    /* Offsets */
-  }
-  /* line 198, assets/sass/_grid.scss */
-  .container .columns.one, .container .columns.two, .container .columns.three, .container .columns.four, .container .columns.five, .container .columns.six, .container .columns.seven, .container .columns.eight, .container .columns.nine, .container .columns.ten, .container .columns.eleven, .container .columns.twelve, .container .columns.thirteen, .container .columns.fourteen, .container .columns.fifteen, .container .columns.sixteen, .container .columns.one-third, .container .columns.two-thirds, .container .column.one, .container .column.two, .container .column.three, .container .column.four, .container .column.five, .container .column.six, .container .column.seven, .container .column.eight, .container .column.nine, .container .column.ten, .container .column.eleven, .container .column.twelve, .container .column.thirteen, .container .column.fourteen, .container .column.fifteen, .container .column.sixteen, .container .column.one-third, .container .column.two-thirds {
-    width: 300px;
-  }
-  /* line 218, assets/sass/_grid.scss */
-  .container .columns .offset-by-one,
-  .container .columns .offset-by-two,
-  .container .columns .offset-by-three,
-  .container .columns .offset-by-four,
-  .container .columns .offset-by-five,
-  .container .columns .offset-by-six,
-  .container .columns .offset-by-seven,
-  .container .columns .offset-by-eight,
-  .container .columns .offset-by-nine,
-  .container .columns .offset-by-ten,
-  .container .columns .offset-by-eleven,
-  .container .columns .offset-by-twelve,
-  .container .columns .offset-by-thirteen,
-  .container .columns .offset-by-fourteen,
-  .container .columns .offset-by-fifteen, .container .column .offset-by-one,
-  .container .column .offset-by-two,
-  .container .column .offset-by-three,
-  .container .column .offset-by-four,
-  .container .column .offset-by-five,
-  .container .column .offset-by-six,
-  .container .column .offset-by-seven,
-  .container .column .offset-by-eight,
-  .container .column .offset-by-nine,
-  .container .column .offset-by-ten,
-  .container .column .offset-by-eleven,
-  .container .column .offset-by-twelve,
-  .container .column .offset-by-thirteen,
-  .container .column .offset-by-fourteen,
-  .container .column .offset-by-fifteen {
-    padding-left: 0;
-  }
-}
+  /*   @media only screen and (max-width: 767px) {
+      .container { width: 300px;
+
+          .columns, .column { margin-left: 0px;  margin-right: 0px;
+
+              &.one,
+              &.two,
+              &.three,
+              &.four,
+              &.five,
+              &.six,
+              &.seven,
+              &.eight,
+              &.nine,
+              &.ten,
+              &.eleven,
+              &.twelve,
+              &.thirteen,
+              &.fourteen,
+              &.fifteen,
+              &.sixteen,
+              &.one-third,
+              &.two-thirds { width: 300px; }
+
+              Offsets
+              .offset-by-one,
+              .offset-by-two,
+              .offset-by-three,
+              .offset-by-four,
+              .offset-by-five,
+              .offset-by-six,
+              .offset-by-seven,
+              .offset-by-eight,
+              .offset-by-nine,
+              .offset-by-ten,
+              .offset-by-eleven,
+              .offset-by-twelve,
+              .offset-by-thirteen,
+              .offset-by-fourteen,
+              .offset-by-fifteen { padding-left: 0; }
+
+          } // .column, .columns
+      } // .container
+  } */
 /* #Mobile (Landscape)
 ================================================== */
 /* Note: Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 245, assets/sass/_grid.scss */
-  .container {
-    width: 420px;
-  }
-  /* line 247, assets/sass/_grid.scss */
-  .container .columns, .container .column {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  /* line 249, assets/sass/_grid.scss */
-  .container .columns.one, .container .columns.two, .container .columns.three, .container .columns.four, .container .columns.five, .container .columns.six, .container .columns.seven, .container .columns.eight, .container .columns.nine, .container .columns.ten, .container .columns.eleven, .container .columns.twelve, .container .columns.thirteen, .container .columns.fourteen, .container .columns.fifteen, .container .columns.sixteen, .container .columns.one-third, .container .columns.two-thirds, .container .column.one, .container .column.two, .container .column.three, .container .column.four, .container .column.five, .container .column.six, .container .column.seven, .container .column.eight, .container .column.nine, .container .column.ten, .container .column.eleven, .container .column.twelve, .container .column.thirteen, .container .column.fourteen, .container .column.fifteen, .container .column.sixteen, .container .column.one-third, .container .column.two-thirds {
-    width: 420px;
-  }
-}
+    /* @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 420px;
+
+            .columns, .column {margin-left: 0px;  margin-right: 0px;
+
+                &.one,
+                &.two,
+                &.three,
+                &.four,
+                &.five,
+                &.six,
+                &.seven,
+                &.eight,
+                &.nine,
+                &.ten,
+                &.eleven,
+                &.twelve,
+                &.thirteen,
+                &.fourteen,
+                &.fifteen,
+                &.sixteen,
+                &.one-third,
+                &.two-thirds { width: 420px; }
+
+            } // .column, .columns
+        } // .container
+    }
+     */
 /* #Clearing
 ================================================== */
 /* Self Clearing Goodness */
@@ -1404,12 +1103,17 @@ or wrap each row of columns in a <div class="row"> */
 
 /* Header Styles
 ================================================== */
-/* line 10, assets/sass/_layout.scss */
+/* line 9, assets/sass/_layout.scss */
+#wpadminbar {
+  position: fixed !important;
+}
+
+/* line 12, assets/sass/_layout.scss */
 header .main-nav {
   height: 70px;
   border-bottom: 5px solid white;
 }
-/* line 11, assets/sass/_layout.scss */
+/* line 13, assets/sass/_layout.scss */
 header .main-nav #logo {
   display: inline;
   float: left;
@@ -1418,11 +1122,11 @@ header .main-nav #logo {
   width: 35%;
   height: 100%;
 }
-/* line 12, assets/sass/_layout.scss */
+/* line 14, assets/sass/_layout.scss */
 header .main-nav #logo img {
   margin: 8px 32px;
 }
-/* line 14, assets/sass/_layout.scss */
+/* line 16, assets/sass/_layout.scss */
 header .main-nav #mainNav {
   display: inline;
   float: left;
@@ -1433,24 +1137,24 @@ header .main-nav #mainNav {
   text-transform: uppercase;
   font-size: 22px;
 }
-/* line 16, assets/sass/_layout.scss */
+/* line 18, assets/sass/_layout.scss */
 header .main-nav #mainNav ul {
   list-style-type: none;
   margin-right: 0px;
   margin-left: 16px;
   float: left;
 }
-/* line 17, assets/sass/_layout.scss */
+/* line 19, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li {
   display: inline;
   line-height: 70px;
   padding: 22px 16px;
 }
-/* line 18, assets/sass/_layout.scss */
+/* line 20, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li.current_page_item a {
   border-bottom: 5px solid white;
 }
-/* line 19, assets/sass/_layout.scss */
+/* line 21, assets/sass/_layout.scss */
 header .main-nav #mainNav ul#menu-main-navigation > li:hover:after {
   content: url("assets/img/arrow.png");
   position: absolute;
@@ -1459,15 +1163,15 @@ header .main-nav #mainNav ul#menu-main-navigation > li:hover:after {
   z-index: 2;
   display: inline;
 }
-/* line 20, assets/sass/_layout.scss */
+/* line 22, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li:last-child:hover:after {
   display: none;
 }
-/* line 21, assets/sass/_layout.scss */
+/* line 23, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li a {
   color: white;
 }
-/* line 23, assets/sass/_layout.scss */
+/* line 25, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul {
   display: none;
   position: absolute;
@@ -1478,7 +1182,7 @@ header .main-nav #mainNav ul li ul {
   padding-left: 15px;
   width: 100%;
 }
-/* line 24, assets/sass/_layout.scss */
+/* line 26, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul:before {
   content: 'Qualifying Language for Item >';
   position: absolute;
@@ -1489,39 +1193,39 @@ header .main-nav #mainNav ul li ul:before {
   text-transform: none;
   background-color: white;
 }
-/* line 26, assets/sass/_layout.scss */
+/* line 28, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li:hover ul {
   display: block;
 }
-/* line 28, assets/sass/_layout.scss */
+/* line 30, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li.current_page_ancestor ul {
   display: block;
 }
-/* line 29, assets/sass/_layout.scss */
+/* line 31, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li.current_page_item ul {
   display: block;
 }
-/* line 30, assets/sass/_layout.scss */
+/* line 32, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li.current_page_item a {
   border-bottom: 5px solid #d75502;
 }
-/* line 32, assets/sass/_layout.scss */
+/* line 34, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li {
   display: inline;
 }
-/* line 33, assets/sass/_layout.scss */
+/* line 35, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li:hover a {
   color: #64381c;
 }
-/* line 34, assets/sass/_layout.scss */
+/* line 36, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li:hover:after {
   display: none;
 }
-/* line 35, assets/sass/_layout.scss */
+/* line 37, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li a {
   color: #d75502;
 }
-/* line 37, assets/sass/_layout.scss */
+/* line 39, assets/sass/_layout.scss */
 header .main-nav #mainNav #search {
   display: inline;
   float: right;
@@ -1529,7 +1233,7 @@ header .main-nav #mainNav #search {
   padding: 25px 25px 25px 20px;
   cursor: pointer;
 }
-/* line 38, assets/sass/_layout.scss */
+/* line 40, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box {
   display: none;
   position: absolute;
@@ -1538,7 +1242,7 @@ header .main-nav #mainNav #search-box {
   z-index: 1;
   width: 332px;
 }
-/* line 39, assets/sass/_layout.scss */
+/* line 41, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-input {
   background-color: #505e6d;
   display: inline-block;
@@ -1547,31 +1251,31 @@ header .main-nav #mainNav #search-box .search-box-input {
   padding: 10px;
   height: 44px;
 }
-/* line 40, assets/sass/_layout.scss */
+/* line 42, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-input input {
   width: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-/* line 42, assets/sass/_layout.scss */
+/* line 44, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-button {
   background-color: #d75502;
   display: inline-block;
   float: left;
   text-align: center;
 }
-/* line 43, assets/sass/_layout.scss */
+/* line 45, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-button input {
   background: none;
   color: white;
   padding: 18px;
 }
-/* line 46, assets/sass/_layout.scss */
+/* line 48, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-button:hover input {
   color: #2e485b;
 }
-/* line 51, assets/sass/_layout.scss */
+/* line 53, assets/sass/_layout.scss */
 header .main-nav #donate {
   float: left;
   background-color: #46a8a5;
@@ -1582,26 +1286,26 @@ header .main-nav #donate {
   height: 100%;
   cursor: pointer;
 }
-/* line 52, assets/sass/_layout.scss */
+/* line 54, assets/sass/_layout.scss */
 header .main-nav #donate span {
   color: #2e485b;
   text-align: center;
   display: block;
   margin: 28px auto;
 }
-/* line 53, assets/sass/_layout.scss */
+/* line 55, assets/sass/_layout.scss */
 header .main-nav #donate span a {
   color: #2e485b;
 }
-/* line 56, assets/sass/_layout.scss */
+/* line 58, assets/sass/_layout.scss */
 header .main-nav #donate:hover {
   background-color: #2e485b;
 }
-/* line 57, assets/sass/_layout.scss */
+/* line 59, assets/sass/_layout.scss */
 header .main-nav #donate:hover span {
   color: #46a8a5;
 }
-/* line 58, assets/sass/_layout.scss */
+/* line 60, assets/sass/_layout.scss */
 header .main-nav #donate:hover span a {
   color: #46a8a5;
 }
@@ -1612,14 +1316,14 @@ header .main-nav #donate:hover span a {
 ================================================== */
 /* Breadcrumbs
 ================================================== */
-/* line 78, assets/sass/_layout.scss */
+/* line 80, assets/sass/_layout.scss */
 #breadcrumbs {
   list-style: none;
   margin-bottom: 20px;
   margin-left: 20px;
   overflow: hidden;
 }
-/* line 79, assets/sass/_layout.scss */
+/* line 81, assets/sass/_layout.scss */
 #breadcrumbs li {
   float: left;
   margin-right: 15px;
@@ -1628,7 +1332,7 @@ header .main-nav #donate:hover span a {
   font-size: 14px;
   color: #707070;
 }
-/* line 80, assets/sass/_layout.scss */
+/* line 82, assets/sass/_layout.scss */
 #breadcrumbs .separator {
   font-weight: 700;
   font-size: 20px;
@@ -1637,37 +1341,37 @@ header .main-nav #donate:hover span a {
 
 /* Homepage Styles
 ================================================== */
-/* line 87, assets/sass/_layout.scss */
+/* line 89, assets/sass/_layout.scss */
 .home-callout {
   background-color: #505e6d;
   width: 35%;
   height: 345px;
   float: left;
 }
-/* line 88, assets/sass/_layout.scss */
+/* line 90, assets/sass/_layout.scss */
 .home-callout .home-callout-text {
   color: white;
   padding: 37px;
   font-size: 20px;
   line-height: 30px;
 }
-/* line 89, assets/sass/_layout.scss */
+/* line 91, assets/sass/_layout.scss */
 .home-callout .home-callout-text .highlight {
   color: #46a8a5;
 }
 
-/* line 92, assets/sass/_layout.scss */
+/* line 94, assets/sass/_layout.scss */
 .home-image {
   width: 65%;
   float: left;
   height: 345px;
   overflow: hidden;
 }
-/* line 93, assets/sass/_layout.scss */
+/* line 95, assets/sass/_layout.scss */
 .home-image img {
   max-width: 100%;
 }
-/* line 94, assets/sass/_layout.scss */
+/* line 96, assets/sass/_layout.scss */
 .home-image .slide {
   position: absolute;
   top: 15px;
@@ -1677,11 +1381,11 @@ header .main-nav #donate:hover span a {
   margin: 25px;
   display: none;
 }
-/* line 95, assets/sass/_layout.scss */
+/* line 97, assets/sass/_layout.scss */
 .home-image .slide h2 {
   color: #2e485b;
 }
-/* line 96, assets/sass/_layout.scss */
+/* line 98, assets/sass/_layout.scss */
 .home-image .slide a {
   text-transform: uppercase;
   color: #d75502;
@@ -1689,19 +1393,19 @@ header .main-nav #donate:hover span a {
   font-size: 20px;
   line-height: 20px;
 }
-/* line 97, assets/sass/_layout.scss */
+/* line 99, assets/sass/_layout.scss */
 .home-image .slide a:hover {
   color: #2e485b;
 }
 
-/* line 101, assets/sass/_layout.scss */
+/* line 103, assets/sass/_layout.scss */
 .home-excerpt {
   border-top: 10px solid #505e6d;
   padding-top: 15px;
   margin-top: 15px;
 }
 
-/* line 104, assets/sass/_layout.scss */
+/* line 106, assets/sass/_layout.scss */
 footer .top-footer {
   background-image: url("assets/img/footer.jpg");
   background-repeat: no-repeat;
@@ -1709,7 +1413,7 @@ footer .top-footer {
   width: 100%;
   margin-top: 10px;
 }
-/* line 105, assets/sass/_layout.scss */
+/* line 107, assets/sass/_layout.scss */
 footer .top-footer .top-footer-box {
   border: 4px solid white;
   margin-top: 13px;
@@ -1723,33 +1427,33 @@ footer .top-footer .top-footer-box {
   text-align: center;
   padding: 16px 18px;
 }
-/* line 106, assets/sass/_layout.scss */
+/* line 108, assets/sass/_layout.scss */
 footer .top-footer .top-footer-box img {
   margin-top: 5px;
 }
-/* line 109, assets/sass/_layout.scss */
+/* line 111, assets/sass/_layout.scss */
 footer .bottom-footer {
   font-family: "chaparral-pro";
   font-size: 12px;
   line-height: 18px;
   padding: 14px;
 }
-/* line 110, assets/sass/_layout.scss */
+/* line 112, assets/sass/_layout.scss */
 footer .bottom-footer .bottom-footer-left {
   float: left;
 }
-/* line 111, assets/sass/_layout.scss */
+/* line 113, assets/sass/_layout.scss */
 footer .bottom-footer .bottom-footer-right {
   float: right;
   text-align: right;
 }
-/* line 113, assets/sass/_layout.scss */
+/* line 115, assets/sass/_layout.scss */
 footer .two {
   margin: 0px !important;
   padding-right: 15px;
   padding-left: 15px;
 }
-/* line 114, assets/sass/_layout.scss */
+/* line 116, assets/sass/_layout.scss */
 footer .two:hover {
   background-color: #46a8a5;
   opacity: 0.7;
@@ -1757,76 +1461,81 @@ footer .two:hover {
 
 /* PAGE Styles
 ================================================== */
-/* line 120, assets/sass/_layout.scss */
+/* line 122, assets/sass/_layout.scss */
 .page-content {
   margin-top: 80px;
   margin-bottom: 40px;
 }
 
-/* line 122, assets/sass/_layout.scss */
+/* line 124, assets/sass/_layout.scss */
 .content-block {
   border-top: 10px solid #2e485b;
 }
-/* line 123, assets/sass/_layout.scss */
+/* line 125, assets/sass/_layout.scss */
 .content-block h2 {
   padding-top: 25px;
 }
-/* line 124, assets/sass/_layout.scss */
+/* line 126, assets/sass/_layout.scss */
 .content-block h4 {
   padding-top: 10px;
   margin-bottom: 3px;
 }
-/* line 125, assets/sass/_layout.scss */
+/* line 127, assets/sass/_layout.scss */
 .content-block .content-block-image {
   overflow: hidden;
   height: 100px;
 }
 
-/* line 128, assets/sass/_layout.scss */
+/* line 130, assets/sass/_layout.scss */
 .content-callout {
   background-color: #505e6d;
   width: 35%;
   height: 345px;
   float: right;
 }
-/* line 129, assets/sass/_layout.scss */
+/* line 131, assets/sass/_layout.scss */
 .content-callout .content-callout-text {
   color: white;
   padding: 37px;
   font-size: 20px;
   line-height: 30px;
 }
-/* line 130, assets/sass/_layout.scss */
+/* line 132, assets/sass/_layout.scss */
 .content-callout .content-callout-text .highlight {
   color: #46a8a5;
 }
 
-/* line 133, assets/sass/_layout.scss */
+/* line 135, assets/sass/_layout.scss */
 .content-image {
   width: 65%;
   float: left;
   height: 345px;
   overflow: hidden;
 }
-/* line 134, assets/sass/_layout.scss */
+/* line 136, assets/sass/_layout.scss */
 .content-image img {
   max-width: 100%;
 }
 
-/* line 137, assets/sass/_layout.scss */
+/* line 139, assets/sass/_layout.scss */
 .resource-left {
   display: inline-block;
 }
 
-/* line 138, assets/sass/_layout.scss */
+/* line 140, assets/sass/_layout.scss */
 .resource-right {
   float: right;
 }
-/* line 139, assets/sass/_layout.scss */
+/* line 141, assets/sass/_layout.scss */
 .resource-right .resource-right-textbox {
   padding: 15px;
   color: white;
   background-color: #2e485b;
+}
+
+/* line 144, assets/sass/_layout.scss */
+.read-more img {
+  margin-top: 10px;
 }
 
 /* FOOTER Styles
