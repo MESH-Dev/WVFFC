@@ -1829,6 +1829,11 @@ footer .two:hover {
   background-color: #2e485b;
 }
 
+/* line 142, assets/sass/_layout.scss */
+.read-more img {
+  margin-top: 10px;
+}
+
 /* FOOTER Styles
 ================================================== */
 /* #Page Styles
