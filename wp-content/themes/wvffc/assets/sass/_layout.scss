@@ -6,6 +6,8 @@
 /* Header Styles
 ================================================== */
 
+#wpadminbar { position: fixed !important; }
+
 header{
 	.main-nav { height: 70px; border-bottom: 5px solid white;
 		#logo { display: inline; float:left; background-image: url('assets/img/header.png'); background-repeat: no-repeat; width: 35%; height: 100%;
