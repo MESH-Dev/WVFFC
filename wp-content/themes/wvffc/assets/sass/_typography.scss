@@ -3,11 +3,11 @@
 	body{ font-family: $chaparral, sans-serif; font-size: 16px; line-height: 20px; color: $black; }
 	h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-	h1 { font-family: $gothic, sans-serif; color: $navy; font-size: 64px; line-height: 64px; }
-	h2{ font-family: $gothic, sans-serif; text-transform: uppercase; color: $orange; font-size: 40px; line-height: 40px; }
-	h3 { font-family: $chaparral, sans-serif; color: $navy; font-size: 20px; line-height: 30px; }
-	h4 { font-family: $gothic, sans-serif; text-transform: uppercase; color: $orange; font-size: 22px; line-height: 22px; }
-	h5 { font-family: $gothic, sans-serif; text-transform: uppercase; color: $teal; font-size: 20px; line-height: 20px; }
+	h1 { font-family: $gothic, sans-serif; color: $navy; font-size: 64px; line-height: 64px; margin-bottom: 10px; }
+	h2{ font-family: $gothic, sans-serif; text-transform: uppercase; color: $orange; font-size: 40px; line-height: 40px; margin-bottom: 10px; }
+	h3 { font-family: $chaparral, sans-serif; color: $navy; font-size: 20px; line-height: 30px; margin-bottom: 10px; }
+	h4 { font-family: $gothic, sans-serif; text-transform: uppercase; color: $orange; font-size: 22px; line-height: 22px; margin-bottom: 10px; }
+	h5 { font-family: $gothic, sans-serif; text-transform: uppercase; color: $teal; font-size: 20px; line-height: 20px; margin-bottom: 10px; }
 	h6 { font-family: $chaparral, sans-serif; font-size: 14px; font-style:italic; color: $grey; }
 
 	p { margin: 0 0 18px 0; }
@@ -18,8 +18,8 @@
 
 
 /*	Blockquotes  */
-	blockquote, blockquote p { font: 22px/30px "Stint Ultra Expanded", cursive; color: $red; letter-spacing: 0.08em }
-	blockquote { margin: 20px 0 20px 0px; padding: 0;  }
+	blockquote, blockquote p { font-family: $chaparral; font-size: 20px; line-height: 30px; color: white; background-color: $dusty-blue; }
+	blockquote { margin: 20px 0 20px 0px; padding: 30px;  }
 	blockquote cite { display: block; font-size: 12px;  }
 	blockquote cite:before { content: "\2014 \0020"; }
 	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: $cherry_black; }

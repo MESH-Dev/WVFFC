@@ -6,6 +6,8 @@
 /* Header Styles
 ================================================== */
 
+#wpadminbar { position: fixed !important; }
+
 header{
 	.main-nav { height: 70px; border-bottom: 5px solid white;
 		#logo { display: inline; float:left; background-image: url('assets/img/header.png'); background-repeat: no-repeat; width: 35%; height: 100%;
@@ -16,21 +18,22 @@ header{
 				ul { list-style-type: none; margin-right: 0px; margin-left: 16px; float: left; }
 				ul li { display: inline; line-height: 70px; padding: 22px 16px; }
 				ul li.current_page_item a { border-bottom: 5px solid white; }
-				ul li:hover:after { content: url('assets/img/arrow.png'); position: absolute; top: 45px; margin-left: -4%; z-index:2; }
+				ul#menu-main-navigation > li:hover:after { content: url('assets/img/arrow.png'); position: absolute; top: 45px; margin-left: -4%; z-index:2; display: inline; }
 				ul li:last-child:hover:after { display: none; }
 				ul li a { color: white; }
 
-				ul li ul { display: none; position: absolute; left: 0; z-index: 1; background-color: white; margin-left: 255px; padding-left: 15px; }
+				ul li ul { display: none; position: absolute; left: 0; z-index: 1; background-color: white; margin-left: 255px; padding-left: 15px; width: 100%; }
 				ul li ul:before { content: 'Qualifying Language for Item >'; position: absolute; left: -255px; z-index:2; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
 
-				ul li ul li:hover:after { display: none;}
 				ul li:hover ul { display: block; }
 
 				ul li.current_page_ancestor ul { display: block; }
+				ul li.current_page_item ul { display: block; }
 				ul li ul li.current_page_item a { border-bottom: 5px solid $orange;}
 
 				ul li ul li { display: inline; }
 				ul li ul li:hover a { color: $brown;}
+				ul li ul li:hover:after { display: none; }
 				ul li ul li a { color: $orange; }
 
 				#search { display: inline; float: right; color: white; padding: 25px 25px 25px 20px; cursor: pointer; }
@@ -41,11 +44,21 @@ header{
 					.search-box-button { background-color: $orange; display: inline-block; float: left; text-align: center;
 						input { background: none; color: white; padding: 18px; }
 					}
+					.search-box-button:hover {
+						input { color: $navy; }
+					}
 				}
 
 		}
-		#donate { float: left; background-color: $teal; width: 10%; font-family: $gothic; text-transform: uppercase; font-size: 22px; height: 100%;
-			span { color: $navy; text-align:center; display: block; margin: 28px auto; }
+		#donate { float: left; background-color: $teal; width: 10%; font-family: $gothic; text-transform: uppercase; font-size: 22px; height: 100%; cursor: pointer;
+			span { color: $navy; text-align:center; display: block; margin: 28px auto;
+				a { color: $navy; }
+			}
+		}
+		#donate:hover { background-color: $navy;
+			span { color: $teal;
+				a { color: $teal; }
+			}
 		}
 	}
 }
@@ -60,6 +73,15 @@ header{
 ================================================== */
 
 
+/* Breadcrumbs
+================================================== */
+
+
+#breadcrumbs{ list-style:none; margin-bottom: 20px; margin-left: 20px; overflow:hidden;
+	li{ float:left; margin-right:15px; font-family: $chaparral; font-style: italic; font-size: 14px; color: #707070; }
+	.separator{ font-weight:700; font-size:20px; color:#999; }
+}
+
 
 /* Homepage Styles
 ================================================== */
@@ -71,24 +93,55 @@ header{
 }
 .home-image { width: 65%; float: left; height: 345px; overflow: hidden;
 	img { max-width: 100%; }
+	.slide { position: absolute; top: 15px; color: white; background-color:rgba(70, 168, 165, 0.8); padding: 25px; margin: 25px; display: none;
+		h2 { color: $navy; }
+		a { text-transform: uppercase; color: $orange; font-family: $gothic; font-size: 20px; line-height: 20px; }
+		a:hover { color: $navy; }
+	}
 }
 
 .home-excerpt { border-top: 10px solid $dusty-blue; padding-top: 15px; margin-top: 15px; }
 
 footer {
 	.top-footer { background-image: url('assets/img/footer.jpg'); background-repeat: no-repeat; height: 168px; width: 100%; margin-top: 10px;
-		.top-footer-box { border: 4px solid white; margin-top: 13px; height: 102px; font-family: $gothic, sans-serif; text-transform: uppercase; color: white; font-size: 26px; line-height: 26px; text-align: center; padding: 16px 18px; }
+		.top-footer-box { border: 4px solid white; margin-top: 13px; margin-bottom: 13px; height: 102px; font-family: $gothic, sans-serif; text-transform: uppercase; color: white; font-size: 26px; line-height: 26px; text-align: center; padding: 16px 18px;
+			img { margin-top: 5px;}
+		}
 	}
 	.bottom-footer { font-family: $chaparral; font-size: 12px; line-height: 18px; padding: 14px;
 		.bottom-footer-left { float: left; }
 		.bottom-footer-right { float: right; text-align: right; }
 	}
+	.two { margin: 0px !important; padding-right: 15px; padding-left: 15px; }
+	.two:hover { background-color: $teal; opacity: 0.7; }
 }
 
 /* PAGE Styles
 ================================================== */
 
+.page-content { margin-top: 80px; margin-bottom: 40px; }
 
+.content-block { border-top: 10px solid $navy;
+	h2 { padding-top: 25px; }
+	h4 { padding-top: 10px; margin-bottom: 3px; }
+	.content-block-image { overflow: hidden; height: 100px; }
+}
+
+.content-callout { background-color: $dusty-blue; width: 35%; height: 345px; float: right;
+	.content-callout-text { color: white; padding: 37px; font-size: 20px; line-height: 30px;
+		.highlight { color: $teal; }
+	}
+}
+.content-image { width: 65%; float: left; height: 345px; overflow: hidden;
+	img { max-width: 100%; }
+}
+
+.resource-left { display: inline-block; }
+.resource-right { float: right;
+	.resource-right-textbox { padding: 15px; color: white; background-color: $navy; }
+}
+
+.read-more img { margin-top: 10px; }
 
 /* FOOTER Styles
 ================================================== */

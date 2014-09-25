@@ -2,36 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="top-footer">
-        <div class="two columns">
-          <div class="top-footer-box">
-            <span>Road map for the economy</span>
-          </div>
-        </div>
-        <div class="two columns">
-          <div class="top-footer-box">
-            <span>West Virginia food mapper</span>
-          </div>
-        </div>
-        <div class="two columns">
-          <div class="top-footer-box">
-            <span>Join the newsletter</span>
-          </div>
-        </div>
-        <div class="two columns">
-          <div class="top-footer-box">
-            <span>Fresh ideas in action series</span>
-          </div>
-        </div>
-        <div class="two columns">
-          <div class="top-footer-box">
-            <span>Get in touch with us</span>
-          </div>
-        </div>
-        <div class="two columns">
-          <div class="top-footer-box">
-            <span>Morbi ac felis</span>
-          </div>
-        </div>
+        <?php dynamic_sidebar('footer-widgets'); ?>
       </div>
       <div class="bottom-footer">
         <div class="bottom-footer-left">
