@@ -18,6 +18,7 @@
 
         <div class="content-image">
           <img src="<?php the_field('content_header_image') ?>" />
+          <?php get_template_part( 'partials/content', 'slideouts' ); ?>
         </div>
     </div>
 
@@ -67,6 +68,6 @@
 
 <?php endwhile; ?>
 
-</div><!-- End of Container -->
+</div></div><!-- End of Container -->
 
 <?php get_footer(); ?>

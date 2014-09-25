@@ -22,14 +22,19 @@ header{
 				ul li:last-child:hover:after { display: none; }
 				ul li a { color: white; }
 
-				ul li ul { display: none; position: absolute; left: 0; z-index: 1; background-color: white; margin-left: 255px; padding-left: 15px; width: 100%; }
-				ul li ul:before { content: 'Qualifying Language for Item >'; position: absolute; left: -255px; z-index:2; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
+				ul li ul { display: none; position: absolute; left: 0; z-index: 1; background-color: white; margin-left: 255px; padding-left: 15px; }
+				ul li:nth-child(1) ul:before { content: 'Our Background >'; position: absolute; left: -255px; padding-left:35px; width: 100%; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
+				ul li:nth-child(2) ul:before { content: 'Our Projects >'; position: absolute; left: -255px; padding-left:35px; width: 100%; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
+				ul li:nth-child(3) ul:before { content: 'Our Causes >'; position: absolute; left: -255px; padding-left:35px; width: 100%; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
+				ul li:nth-child(4) ul:before { content: 'What People Are Saying >'; position: absolute; padding-left:35px; width: 100%; left: -255px; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
 
 				ul li:hover ul { display: block; }
 
 				ul li.current_page_ancestor ul { display: block; }
 				ul li.current_page_item ul { display: block; }
 				ul li ul li.current_page_item a { border-bottom: 5px solid $orange;}
+
+				ul > li.current_page_ancestor:after { content: url('assets/img/arrow.png'); position: absolute; top: 45px; margin-left: -4%; z-index:2; display: inline; }
 
 				ul li ul li { display: inline; }
 				ul li ul li:hover a { color: $brown;}
@@ -51,7 +56,7 @@ header{
 
 		}
 		#donate { float: left; background-color: $teal; width: 10%; font-family: $gothic; text-transform: uppercase; font-size: 22px; height: 100%; cursor: pointer;
-			span { color: $navy; text-align:center; display: block; margin: 28px auto;
+			span { color: $navy; text-align:center; display: block; margin: 25px auto;
 				a { color: $navy; }
 			}
 		}
@@ -114,12 +119,17 @@ footer {
 	}
 	.two { margin: 0px !important; padding-right: 15px; padding-left: 15px; }
 	.two:hover { background-color: $teal; opacity: 0.7; }
+
+	.container .row { margin-bottom: 0px; padding-bottom: 20px; }
 }
 
 /* PAGE Styles
 ================================================== */
 
-.page-content { margin-top: 80px; margin-bottom: 40px; }
+.container { background-color: white; }
+
+.page-content { padding-top: 80px; padding-bottom: 40px; }
+.resource-content { padding-top: 20px; padding-bottom: 40px; }
 
 .content-block { border-top: 10px solid $navy;
 	h2 { padding-top: 25px; }
@@ -127,13 +137,18 @@ footer {
 	.content-block-image { overflow: hidden; height: 100px; }
 }
 
-.content-callout { background-color: $dusty-blue; width: 35%; height: 345px; float: right;
+.content-callout { background-color: $dusty-blue; width: 50%; height: 345px; float: right;
 	.content-callout-text { color: white; padding: 37px; font-size: 20px; line-height: 30px;
 		.highlight { color: $teal; }
 	}
 }
-.content-image { width: 65%; float: left; height: 345px; overflow: hidden;
+.content-image { width: 50%; float: left; height: 345px; overflow: hidden;
 	img { max-width: 100%; }
+	.slide { position: absolute; top: 15px; color: white; background-color:rgba(70, 168, 165, 0.8); padding: 25px; margin: 25px; display: none; width: 410px;
+		h2 { color: $navy; }
+		a { text-transform: uppercase; color: $orange; font-family: $gothic; font-size: 20px; line-height: 20px; }
+		a:hover { color: $navy; }
+	}
 }
 
 .resource-left { display: inline-block; }
@@ -143,9 +158,12 @@ footer {
 
 .read-more img { margin-top: 10px; }
 
+.last { margin-bottom: 0px !important; padding-bottom: 20px; }
+
+.big { -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); }
+
 /* FOOTER Styles
 ================================================== */
-
 
 
 /* #Page Styles
