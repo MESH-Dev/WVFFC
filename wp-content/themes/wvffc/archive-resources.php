@@ -6,12 +6,12 @@
 
 ?>
 
-<div class="container page-content">
+<div class="container resource-content">
 
   <ul id="breadcrumbs">
     <li><a href="<?php echo get_home_url(); ?>">Home</a></li>
-    <li class="separator"> / </li>
-    <li><strong>Free Library</strong></li>
+    <li class="separator"> > </li>
+    <li>Free Library</li>
   </ul>
 
   <div class="row">
@@ -92,6 +92,6 @@
 
   <?php endwhile; ?>
 
-</div><!-- End of Container -->
+</div></div><!-- End of Container -->
 
 <?php get_footer(); ?>

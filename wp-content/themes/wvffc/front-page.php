@@ -15,7 +15,7 @@
         <?php get_template_part( 'partials/home', 'slideouts' ); ?>
       </div>
   </div>
-  <div class="row">
+  <div class="row last">
     <div class="four columns">
       <div class="home-excerpt">
         <h2><?php the_field('column_1_headline'); ?></h2>
