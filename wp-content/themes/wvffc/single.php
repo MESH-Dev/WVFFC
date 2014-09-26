@@ -1,8 +1,16 @@
 <?php get_header(); ?>
 
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+<div class="container resource-content">
 
- <div class="container page-content">
+<ul id="breadcrumbs">
+  <li><a href="<?php echo get_home_url(); ?>">Home</a></li>
+  <li class="separator"> > </li>
+  <li><a href="<?php echo get_bloginfo('url') ?>/resources">Free Library</a></li>
+  <li class="separator"> > </li>
+  <li><?php the_title(); ?></li>
+</ul>
+
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
    <div class="eight columns">
        <h1><?php the_title(); ?></h1>
@@ -13,9 +21,8 @@
        <?php the_field('sidebar_content'); ?>
    </div>
 
- </div><!-- End of Container -->
-
 <?php endwhile; ?>
 
+</div><!-- End of Container -->
 
 <?php get_footer(); ?>
