@@ -22,7 +22,7 @@ header{
 				ul li:last-child:hover:after { display: none; }
 				ul li a { color: white; }
 
-				ul li ul { display: none; position: absolute; left: 0; z-index: 1; background-color: white; margin-left: 255px; padding-left: 15px; }
+				ul li ul { display: none; position: absolute; left: 0; z-index: 1; background-color: white; margin-left: 255px; padding-left: 15px; width: 750px; }
 				ul li:nth-child(1) ul:before { content: 'Our Background >'; position: absolute; left: -255px; padding-left:35px; width: 100%; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
 				ul li:nth-child(2) ul:before { content: 'Our Projects >'; position: absolute; left: -255px; padding-left:35px; width: 100%; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
 				ul li:nth-child(3) ul:before { content: 'Our Causes >'; position: absolute; left: -255px; padding-left:35px; width: 100%; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
@@ -103,9 +103,58 @@ header{
 		a { text-transform: uppercase; color: $orange; font-family: $gothic; font-size: 20px; line-height: 20px; }
 		a:hover { color: $navy; }
 	}
+	.slide:before { content: url('assets/img/teal_arrow.png'); position: absolute; top: 85px; left: -18px; opacity: 0.8; }
 }
 
 .home-excerpt { border-top: 10px solid $dusty-blue; padding-top: 15px; margin-top: 15px; }
+
+/* PAGE Styles
+================================================== */
+
+.container { background-color: white; }
+
+.page-content { padding-top: 80px; padding-bottom: 40px; }
+.resource-content { padding-top: 20px; padding-bottom: 40px; }
+.search-content { padding-top: 20px; padding-bottom: 40px;
+	h2 a { color: $orange; }
+	h2 a:hover { color: $navy; }
+}
+
+.content-block { border-top: 10px solid $navy;
+	h2 { padding-top: 25px; }
+	h4 { padding-top: 10px; margin-bottom: 3px; }
+	h4:hover { color: $navy; }
+	.content-block-image { overflow: hidden; height: 100px; }
+}
+
+.content-callout { background-color: $dusty-blue; width: 50%; height: 345px; float: right;
+	.content-callout-text { color: white; padding: 37px; font-size: 20px; line-height: 30px;
+		.highlight { color: $teal; }
+	}
+}
+.content-image { width: 50%; float: left; height: 345px; overflow: hidden;
+	img { max-width: 100%; }
+	.slide { position: absolute; top: 80px; color: white; background-color:rgba(70, 168, 165, 0.8); padding: 25px; margin: 25px; display: none; width: 410px;
+		h2 { color: $navy; }
+		a { text-transform: uppercase; color: $orange; font-family: $gothic; font-size: 20px; line-height: 20px; }
+		a:hover { color: $navy; }
+	}
+}
+
+.resource-left { display: inline-block; }
+.resource-right { float: right;
+	.resource-right-textbox { padding: 15px; color: white; background-color: $navy; }
+}
+
+.read-more img { margin-top: 10px; background-color: $teal; border-radius: 12px; }
+.read-more img:hover { background-color: $navy; }
+
+.last { margin-bottom: 0px !important; padding-bottom: 20px; }
+
+.big { -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); }
+
+/* FOOTER Styles
+================================================== */
 
 footer {
 	.top-footer { background-image: url('assets/img/footer.jpg'); background-repeat: no-repeat; height: 168px; width: 100%; margin-top: 10px;
@@ -122,49 +171,6 @@ footer {
 
 	.container .row { margin-bottom: 0px; padding-bottom: 20px; }
 }
-
-/* PAGE Styles
-================================================== */
-
-.container { background-color: white; }
-
-.page-content { padding-top: 80px; padding-bottom: 40px; }
-.resource-content { padding-top: 20px; padding-bottom: 40px; }
-
-.content-block { border-top: 10px solid $navy;
-	h2 { padding-top: 25px; }
-	h4 { padding-top: 10px; margin-bottom: 3px; }
-	.content-block-image { overflow: hidden; height: 100px; }
-}
-
-.content-callout { background-color: $dusty-blue; width: 50%; height: 345px; float: right;
-	.content-callout-text { color: white; padding: 37px; font-size: 20px; line-height: 30px;
-		.highlight { color: $teal; }
-	}
-}
-.content-image { width: 50%; float: left; height: 345px; overflow: hidden;
-	img { max-width: 100%; }
-	.slide { position: absolute; top: 15px; color: white; background-color:rgba(70, 168, 165, 0.8); padding: 25px; margin: 25px; display: none; width: 410px;
-		h2 { color: $navy; }
-		a { text-transform: uppercase; color: $orange; font-family: $gothic; font-size: 20px; line-height: 20px; }
-		a:hover { color: $navy; }
-	}
-}
-
-.resource-left { display: inline-block; }
-.resource-right { float: right;
-	.resource-right-textbox { padding: 15px; color: white; background-color: $navy; }
-}
-
-.read-more img { margin-top: 10px; }
-
-.last { margin-bottom: 0px !important; padding-bottom: 20px; }
-
-.big { -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); }
-
-/* FOOTER Styles
-================================================== */
-
 
 /* #Page Styles
 ================================================== */

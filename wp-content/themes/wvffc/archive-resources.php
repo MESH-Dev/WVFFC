@@ -63,7 +63,7 @@
 
         ?>
 
-        <h4><?php the_title(); ?></h4>
+        <a href="<?php echo get_permalink( $post->ID ); ?>"><h4><?php the_title(); ?></h4></a>
         <?php the_excerpt(); ?>
 
      </div>

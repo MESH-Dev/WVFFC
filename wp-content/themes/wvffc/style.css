@@ -1181,6 +1181,7 @@ header .main-nav #mainNav ul li ul {
   background-color: white;
   margin-left: 255px;
   padding-left: 15px;
+  width: 750px;
 }
 /* line 26, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li:nth-child(1) ul:before {
@@ -1447,15 +1448,180 @@ header .main-nav #donate:hover span a {
 .home-image .slide a:hover {
   color: #2e485b;
 }
+/* line 106, assets/sass/_layout.scss */
+.home-image .slide:before {
+  content: url("assets/img/teal_arrow.png");
+  position: absolute;
+  top: 85px;
+  left: -18px;
+  opacity: 0.8;
+}
 
-/* line 108, assets/sass/_layout.scss */
+/* line 109, assets/sass/_layout.scss */
 .home-excerpt {
   border-top: 10px solid #505e6d;
   padding-top: 15px;
   margin-top: 15px;
 }
 
-/* line 111, assets/sass/_layout.scss */
+/* PAGE Styles
+================================================== */
+/* line 114, assets/sass/_layout.scss */
+.container {
+  background-color: white;
+}
+
+/* line 116, assets/sass/_layout.scss */
+.page-content {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+/* line 117, assets/sass/_layout.scss */
+.resource-content {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* line 118, assets/sass/_layout.scss */
+.search-content {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+/* line 119, assets/sass/_layout.scss */
+.search-content h2 a {
+  color: #d75502;
+}
+/* line 120, assets/sass/_layout.scss */
+.search-content h2 a:hover {
+  color: #2e485b;
+}
+
+/* line 123, assets/sass/_layout.scss */
+.content-block {
+  border-top: 10px solid #2e485b;
+}
+/* line 124, assets/sass/_layout.scss */
+.content-block h2 {
+  padding-top: 25px;
+}
+/* line 125, assets/sass/_layout.scss */
+.content-block h4 {
+  padding-top: 10px;
+  margin-bottom: 3px;
+}
+/* line 126, assets/sass/_layout.scss */
+.content-block h4:hover {
+  color: #2e485b;
+}
+/* line 127, assets/sass/_layout.scss */
+.content-block .content-block-image {
+  overflow: hidden;
+  height: 100px;
+}
+
+/* line 130, assets/sass/_layout.scss */
+.content-callout {
+  background-color: #505e6d;
+  width: 50%;
+  height: 345px;
+  float: right;
+}
+/* line 131, assets/sass/_layout.scss */
+.content-callout .content-callout-text {
+  color: white;
+  padding: 37px;
+  font-size: 20px;
+  line-height: 30px;
+}
+/* line 132, assets/sass/_layout.scss */
+.content-callout .content-callout-text .highlight {
+  color: #46a8a5;
+}
+
+/* line 135, assets/sass/_layout.scss */
+.content-image {
+  width: 50%;
+  float: left;
+  height: 345px;
+  overflow: hidden;
+}
+/* line 136, assets/sass/_layout.scss */
+.content-image img {
+  max-width: 100%;
+}
+/* line 137, assets/sass/_layout.scss */
+.content-image .slide {
+  position: absolute;
+  top: 80px;
+  color: white;
+  background-color: rgba(70, 168, 165, 0.8);
+  padding: 25px;
+  margin: 25px;
+  display: none;
+  width: 410px;
+}
+/* line 138, assets/sass/_layout.scss */
+.content-image .slide h2 {
+  color: #2e485b;
+}
+/* line 139, assets/sass/_layout.scss */
+.content-image .slide a {
+  text-transform: uppercase;
+  color: #d75502;
+  font-family: "alternate-gothic-no-1-d";
+  font-size: 20px;
+  line-height: 20px;
+}
+/* line 140, assets/sass/_layout.scss */
+.content-image .slide a:hover {
+  color: #2e485b;
+}
+
+/* line 144, assets/sass/_layout.scss */
+.resource-left {
+  display: inline-block;
+}
+
+/* line 145, assets/sass/_layout.scss */
+.resource-right {
+  float: right;
+}
+/* line 146, assets/sass/_layout.scss */
+.resource-right .resource-right-textbox {
+  padding: 15px;
+  color: white;
+  background-color: #2e485b;
+}
+
+/* line 149, assets/sass/_layout.scss */
+.read-more img {
+  margin-top: 10px;
+  background-color: #46a8a5;
+  border-radius: 12px;
+}
+
+/* line 150, assets/sass/_layout.scss */
+.read-more img:hover {
+  background-color: #2e485b;
+}
+
+/* line 152, assets/sass/_layout.scss */
+.last {
+  margin-bottom: 0px !important;
+  padding-bottom: 20px;
+}
+
+/* line 154, assets/sass/_layout.scss */
+.big {
+  -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* FOOTER Styles
+================================================== */
+/* line 160, assets/sass/_layout.scss */
 footer .top-footer {
   background-image: url("assets/img/footer.jpg");
   background-repeat: no-repeat;
@@ -1463,7 +1629,7 @@ footer .top-footer {
   width: 100%;
   margin-top: 10px;
 }
-/* line 112, assets/sass/_layout.scss */
+/* line 161, assets/sass/_layout.scss */
 footer .top-footer .top-footer-box {
   border: 4px solid white;
   margin-top: 13px;
@@ -1477,175 +1643,43 @@ footer .top-footer .top-footer-box {
   text-align: center;
   padding: 16px 18px;
 }
-/* line 113, assets/sass/_layout.scss */
+/* line 162, assets/sass/_layout.scss */
 footer .top-footer .top-footer-box img {
   margin-top: 5px;
 }
-/* line 116, assets/sass/_layout.scss */
+/* line 165, assets/sass/_layout.scss */
 footer .bottom-footer {
   font-family: "chaparral-pro";
   font-size: 12px;
   line-height: 18px;
   padding: 14px;
 }
-/* line 117, assets/sass/_layout.scss */
+/* line 166, assets/sass/_layout.scss */
 footer .bottom-footer .bottom-footer-left {
   float: left;
 }
-/* line 118, assets/sass/_layout.scss */
+/* line 167, assets/sass/_layout.scss */
 footer .bottom-footer .bottom-footer-right {
   float: right;
   text-align: right;
 }
-/* line 120, assets/sass/_layout.scss */
+/* line 169, assets/sass/_layout.scss */
 footer .two {
   margin: 0px !important;
   padding-right: 15px;
   padding-left: 15px;
 }
-/* line 121, assets/sass/_layout.scss */
+/* line 170, assets/sass/_layout.scss */
 footer .two:hover {
   background-color: #46a8a5;
   opacity: 0.7;
 }
-/* line 123, assets/sass/_layout.scss */
+/* line 172, assets/sass/_layout.scss */
 footer .container .row {
   margin-bottom: 0px;
   padding-bottom: 20px;
 }
 
-/* PAGE Styles
-================================================== */
-/* line 129, assets/sass/_layout.scss */
-.container {
-  background-color: white;
-}
-
-/* line 131, assets/sass/_layout.scss */
-.page-content {
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-
-/* line 132, assets/sass/_layout.scss */
-.resource-content {
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
-
-/* line 134, assets/sass/_layout.scss */
-.content-block {
-  border-top: 10px solid #2e485b;
-}
-/* line 135, assets/sass/_layout.scss */
-.content-block h2 {
-  padding-top: 25px;
-}
-/* line 136, assets/sass/_layout.scss */
-.content-block h4 {
-  padding-top: 10px;
-  margin-bottom: 3px;
-}
-/* line 137, assets/sass/_layout.scss */
-.content-block .content-block-image {
-  overflow: hidden;
-  height: 100px;
-}
-
-/* line 140, assets/sass/_layout.scss */
-.content-callout {
-  background-color: #505e6d;
-  width: 50%;
-  height: 345px;
-  float: right;
-}
-/* line 141, assets/sass/_layout.scss */
-.content-callout .content-callout-text {
-  color: white;
-  padding: 37px;
-  font-size: 20px;
-  line-height: 30px;
-}
-/* line 142, assets/sass/_layout.scss */
-.content-callout .content-callout-text .highlight {
-  color: #46a8a5;
-}
-
-/* line 145, assets/sass/_layout.scss */
-.content-image {
-  width: 50%;
-  float: left;
-  height: 345px;
-  overflow: hidden;
-}
-/* line 146, assets/sass/_layout.scss */
-.content-image img {
-  max-width: 100%;
-}
-/* line 147, assets/sass/_layout.scss */
-.content-image .slide {
-  position: absolute;
-  top: 15px;
-  color: white;
-  background-color: rgba(70, 168, 165, 0.8);
-  padding: 25px;
-  margin: 25px;
-  display: none;
-  width: 410px;
-}
-/* line 148, assets/sass/_layout.scss */
-.content-image .slide h2 {
-  color: #2e485b;
-}
-/* line 149, assets/sass/_layout.scss */
-.content-image .slide a {
-  text-transform: uppercase;
-  color: #d75502;
-  font-family: "alternate-gothic-no-1-d";
-  font-size: 20px;
-  line-height: 20px;
-}
-/* line 150, assets/sass/_layout.scss */
-.content-image .slide a:hover {
-  color: #2e485b;
-}
-
-/* line 154, assets/sass/_layout.scss */
-.resource-left {
-  display: inline-block;
-}
-
-/* line 155, assets/sass/_layout.scss */
-.resource-right {
-  float: right;
-}
-/* line 156, assets/sass/_layout.scss */
-.resource-right .resource-right-textbox {
-  padding: 15px;
-  color: white;
-  background-color: #2e485b;
-}
-
-/* line 159, assets/sass/_layout.scss */
-.read-more img {
-  margin-top: 10px;
-}
-
-/* line 161, assets/sass/_layout.scss */
-.last {
-  margin-bottom: 0px !important;
-  padding-bottom: 20px;
-}
-
-/* line 163, assets/sass/_layout.scss */
-.big {
-  -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
-}
-
-/* FOOTER Styles
-================================================== */
 /* #Page Styles
 ================================================== */
 /* #Blog Styles
