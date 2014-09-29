@@ -136,8 +136,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="url"],
-textarea,
-select {
+textarea {
 	border: 1px solid #FFF;
 	padding: 6px 4px;
 	outline: none;
@@ -148,7 +147,20 @@ select {
 	display: block;
 	background: #fff; }
 select {
-	padding: 0; }
+	display: block;
+	width: 100%;
+	background: white;
+	height: 45px;
+	border: 4px solid $teal;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0px;
+	font-size: 20px;
+	padding-left: 10px;
+	text-transform: uppercase;
+	font-family: $gothic;
+	color: $navy;
+	padding-top: 4px;
+	background: url('assets/img/arrow_down.png') no-repeat 98%;	}
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -166,8 +178,6 @@ legend {
 	display: block;
 	font-weight: bold;
 	font-size: 14px;  }
-select {
-	width: 220px; }
 input[type="checkbox"] {
 	display: inline; }
 label span,

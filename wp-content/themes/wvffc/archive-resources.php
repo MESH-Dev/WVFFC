@@ -21,6 +21,41 @@
     </div>
   </div>
 
+  <div class="row">
+    <div class="four columns">
+      <a class="resource-btn" href="#">For Farmers & Small Businesses</a>
+    </div>
+    <div class="four columns">
+      <a class="resource-btn" href="#">For Advocates & Getting Involved</a>
+    </div>
+    <div class="four columns">
+      <a class="resource-btn" href="#">Finding Local Farms</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="four columns">
+      <a class="resource-btn" href="#">Studies</a>
+    </div>
+    <div class="four columns">
+      <a class="resource-btn" href="#">Newsletter Archives</a>
+    </div>
+    <div class="four columns">
+      <a class="resource-btn" href="#">Show All</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="four columns">
+      <select class="turnintodropdown">
+				<option>England</option>
+				<option>Northern Ireland</option>
+				<option>Scotland</option>
+				<option>Wales</option>
+  		</select>
+    </div>
+  </div>
+
   <?php
 
   $i = 1;
