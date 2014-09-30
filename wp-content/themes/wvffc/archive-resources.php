@@ -48,7 +48,8 @@
   <div class="row">
     <div class="four columns">
       <select class="turnintodropdown">
-        <option value="all">All Regions</option>
+        <option>All Regions</option>
+        <option>All Regions</option>
 
         <?php
           //GET regions for each post and add region to each block
@@ -95,50 +96,50 @@
     </div>
   </div>
 
-  <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
-    <?php
-      //GET regions for each post and add region to each block
-      $terms = get_the_terms( $post->ID, 'region' );
-      $regions = '';
-
-      if ( $terms && ! is_wp_error( $terms ) ) :
-        foreach ( $terms as $term ) {
-          $t = strtolower(str_replace(" ", "-", $term->name));
-          $regions  = $regions . $t . ' ';
-        }
-      endif;
-    ?>
-
-    <?php
-      //GET file types for each post and add file types to each block
-      $terms = get_the_terms( $post->ID, 'file-type' );
-      $file_types = '';
-
-      if ( $terms && ! is_wp_error( $terms ) ) :
-        foreach ( $terms as $term ) {
-          $f = strtolower(str_replace(" ", "-", $term->name));
-          $file_types  = $file_types . $f . ' ';
-        }
-      endif;
-    ?>
-
-    <div class="two columns content-block <?php echo $regions; ?>">
+  <div id="resources">
+    <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
       <?php
+        //GET regions for each post and add region to each block
+        $terms = get_the_terms( $post->ID, 'region' );
+        $regions = '';
 
-       if (get_field('resource_image')) {
-           echo '<div class="content-block-image"><img src="'.get_field('resource_image').'" /></div>';
-       }
+        if ( $terms && ! is_wp_error( $terms ) ) :
+          foreach ( $terms as $term ) {
+            $t = strtolower(str_replace(" ", "-", $term->name));
+            $regions  = $regions . $t . ' ';
+          }
+        endif;
+      ?>
 
-       ?>
+      <?php
+        //GET file types for each post and add file types to each block
+        $terms = get_the_terms( $post->ID, 'filetype' );
+        $file_types = '';
 
-       <a href="<?php echo get_permalink( $post->ID ); ?>"><h4><?php the_title(); ?></h4></a>
-       <?php the_excerpt(); ?>
+        if ( $terms && ! is_wp_error( $terms ) ) :
+          foreach ( $terms as $term ) {
+            $f = strtolower(str_replace(" ", "-", $term->name));
+            $file_types  = $file_types . $f . ' ';
+          }
+        endif;
+      ?>
 
-    </div>
+      <div class="two columns content-block <?php echo $regions; ?> <?php echo $file_types; ?> ">
 
-  <?php endwhile; ?>
+         <?php
+           if (get_field('resource_image')) {
+               echo '<div class="content-block-image"><img src="'.get_field('resource_image').'" /></div>';
+           }
+         ?>
+
+         <a href="<?php echo get_permalink( $post->ID ); ?>"><h4><?php the_title(); ?></h4></a>
+         <?php the_excerpt(); ?>
+
+      </div>
+
+    <?php endwhile; ?>
+  </div>
 
 </div></div><!-- End of Container -->
 

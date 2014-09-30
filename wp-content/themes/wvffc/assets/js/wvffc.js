@@ -49,7 +49,10 @@ jQuery(document).ready(function($){
     });
   });
 
-  
+  $(".resource-btn").click(function() {
+    var customType = $( this ).data('filter');
+    console.log(customType);
+  })
 
 
 });
