@@ -11,8 +11,6 @@
     wp_enqueue_script( 'wvffc-script', get_template_directory_uri().'/assets/prod/wvffc.js', array('jquery'), '1.0.0', true );
     wp_enqueue_script('typekit','//use.typekit.net/bde6gkq.js');
 
-    wp_enqueue_script( 'dropdown-script', get_template_directory_uri().'/assets/prod/select.js', array('jquery'), '1.0.0', true );
-
     wp_enqueue_style('font-awesome',get_template_directory_uri().'/assets/libs/font-awesome-4.1.0/css/font-awesome.min.css');
   }
   add_action( 'wp_enqueue_scripts', 'WPS_scripts' );

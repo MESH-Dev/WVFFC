@@ -122,7 +122,7 @@ header{
 	h2 a:hover { color: $navy; }
 }
 
-.content-block { border-top: 10px solid $navy;
+.content-block { border-top: 10px solid $navy; height: 260px;
 	h2 { padding-top: 25px; }
 	h4 { padding-top: 10px; margin-bottom: 3px; }
 	h4:hover { color: $navy; }
@@ -147,7 +147,7 @@ header{
 .resource-btn:hover { background: $navy; color: $teal; }
 
 .resource-left { display: inline-block; }
-.resource-right { float: right;
+.resource-right { float: right !important; height: 540px; max-height: 540px;
 	.resource-right-textbox { padding: 25px; color: white; background-color: $navy; }
 }
 
@@ -186,6 +186,62 @@ footer {
 ================================================== */
 
 
+/* #Checkbox Styles
+================================================== */
+
+.cb {
+	font-family: $gothic;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: $navy;
+	display: inline;
+	position: relative;
+	top: 8px;
+}
+
+.checkboxFive {
+	display: inline;
+	position: relative;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.checkboxFive label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+  	left: 0;
+	background: white;
+	border:4px solid $teal;
+}
+.checkboxFive label:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 6px;
+	left: 7px;
+	border: 3px solid $navy;
+	border-top: none;
+	border-right: none;
+	color: $navy;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.checkboxFive label:hover::after {
+	opacity: 0.5;
+}
+.checkboxFive input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
 /* #Dropdown Styles
 ================================================== */
 
@@ -197,7 +253,7 @@ footer {
 
 .trigger {
 	color: #777;
-	padding: 10px;
+	padding: 5px 5px 3px 5px;
 	font-size: 16px;
 	width: 100%;
 	background: #fff url(assets/img/arrow_down.png) 98% center no-repeat;
@@ -224,7 +280,7 @@ footer {
 
 .activetrigger {
 	color: #777;
-	padding: 10px;
+	padding: 5px 5px 3px 5px;
 	font-size: 16px;
 	width: 100%;
 	background: $navy url(assets/img/arrow_up.png) 98% center no-repeat;
@@ -256,7 +312,7 @@ footer {
 	border-top: none;
 	background: #fff;
 	list-style-type: none;
-	padding: 10px;
+	padding: 5px 5px 3px 5px;
 	margin: 0;
 	width: 100%;
 	z-index: 100;
@@ -270,7 +326,6 @@ footer {
 	}
 
 .dropcontainer ul li {
-	padding: 5px;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;

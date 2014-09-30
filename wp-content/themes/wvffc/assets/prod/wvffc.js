@@ -33,7 +33,7 @@ function tamingselect()
 
 			// Add in the full URL to str when switching domains
 
-			trigger.href=str;
+			trigger.href='#';
 
 			trigger.onclick=function(){
 				ts_swapclass(this,ts_triggeroff,ts_triggeron)
@@ -56,7 +56,7 @@ function tamingselect()
 
 				// Add in the full URL to str when switching domains
 
-				newa.href=str;
+				newa.href='#';
 
 				newa.appendChild(document.createTextNode(
 				sels[i].getElementsByTagName('option')[j].text));
@@ -181,9 +181,9 @@ jQuery(document).ready(function($){
       }
 
     });
-
-
   });
+
+  
 
 
 });
