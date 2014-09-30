@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+<div class="container page-content">
 
- <div class="container page-content">
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
    <?php the_breadcrumb(); ?>
 
@@ -15,9 +15,8 @@
        <?php the_field('sidebar_content'); ?>
    </div>
 
- </div><!-- End of Container -->
-
 <?php endwhile; ?>
 
+</div><!-- End of Container -->
 
 <?php get_footer(); ?>

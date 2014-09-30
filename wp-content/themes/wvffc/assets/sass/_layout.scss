@@ -22,11 +22,13 @@ header{
 				ul li:last-child:hover:after { display: none; }
 				ul li a { color: white; }
 
-				ul li ul { display: none; position: absolute; left: 0; z-index: 1; background-color: white; margin-left: 255px; padding-left: 15px; }
-				ul li:nth-child(1) ul:before { content: 'Our Background >'; position: absolute; left: -255px; padding-left:35px; width: 100%; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
-				ul li:nth-child(2) ul:before { content: 'Our Projects >'; position: absolute; left: -255px; padding-left:35px; width: 100%; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
-				ul li:nth-child(3) ul:before { content: 'Our Causes >'; position: absolute; left: -255px; padding-left:35px; width: 100%; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
-				ul li:nth-child(4) ul:before { content: 'What People Are Saying >'; position: absolute; padding-left:35px; width: 100%; left: -255px; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
+				ul li ul { display: none; position: absolute; left: 0; z-index: 1; background-color: white; margin-left: 255px; padding-left: 15px; width: 750px; }
+				ul li:nth-child(1) ul:before { content: 'Who We Are >'; position: absolute; left: -255px; padding-left:35px; width: 100%; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
+				ul li:nth-child(2) ul:before { content: 'Our Impact on WV >'; position: absolute; left: -255px; padding-left:35px; width: 100%; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
+				ul li:nth-child(3) ul:before { content: 'Motivation for Change >'; position: absolute; left: -255px; padding-left:35px; width: 100%; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
+
+				ul li:nth-child(4) ul { padding-left: 50px; width: 715px; }
+				ul li:nth-child(4) ul:before { content: 'Current Headlines and Video >'; position: absolute; padding-left:35px; width: 100%; left: -255px; z-index:-1; font-family: $chaparral; font-style: italic; text-transform: none; background-color: white; }
 
 				ul li:hover ul { display: block; }
 
@@ -103,9 +105,61 @@ header{
 		a { text-transform: uppercase; color: $orange; font-family: $gothic; font-size: 20px; line-height: 20px; }
 		a:hover { color: $navy; }
 	}
+	.slide:before { content: url('assets/img/teal_arrow.png'); position: absolute; top: 85px; left: -18px; opacity: 0.8; }
 }
 
 .home-excerpt { border-top: 10px solid $dusty-blue; padding-top: 15px; margin-top: 15px; }
+
+/* PAGE Styles
+================================================== */
+
+.container { background-color: white; }
+
+.page-content { padding-top: 80px; padding-bottom: 40px; }
+.resource-content { padding-top: 20px; padding-bottom: 40px; }
+.search-content { padding-top: 20px; padding-bottom: 40px;
+	h2 a { color: $orange; }
+	h2 a:hover { color: $navy; }
+}
+
+.content-block { border-top: 10px solid $navy; height: 260px;
+	h2 { padding-top: 25px; }
+	h4 { padding-top: 10px; margin-bottom: 3px; }
+	h4:hover { color: $navy; }
+	.content-block-image { overflow: hidden; height: 100px; }
+}
+
+.content-callout { background-color: $dusty-blue; width: 50%; height: 345px; float: right;
+	.content-callout-text { color: white; padding: 37px; font-size: 20px; line-height: 30px;
+		.highlight { color: $teal; }
+	}
+}
+.content-image { width: 50%; float: left; height: 345px; overflow: hidden;
+	img { max-width: 100%; }
+	.slide { position: absolute; top: 80px; color: white; background-color:rgba(70, 168, 165, 0.8); padding: 25px; margin: 25px; display: none; width: 410px;
+		h2 { color: $navy; }
+		a { text-transform: uppercase; color: $orange; font-family: $gothic; font-size: 20px; line-height: 20px; }
+		a:hover { color: $navy; }
+	}
+}
+
+.resource-btn { display: block; background: $teal; color: $navy; text-transform: uppercase; text-align: center; font-family: $gothic; font-size: 20px; line-height: 20px; padding: 10px; cursor: pointer; }
+.resource-btn:hover { background: $navy; color: $teal; }
+
+.resource-left { display: inline-block; }
+.resource-right { float: right !important; height: 540px; max-height: 540px;
+	.resource-right-textbox { padding: 25px; color: white; background-color: $navy; }
+}
+
+.read-more img { margin-top: 10px; background-color: $teal; border-radius: 12px; }
+.read-more img:hover { background-color: $navy; }
+
+.last { margin-bottom: 0px !important; padding-bottom: 20px; }
+
+.big { -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); }
+
+/* FOOTER Styles
+================================================== */
 
 footer {
 	.top-footer { background-image: url('assets/img/footer.jpg'); background-repeat: no-repeat; height: 168px; width: 100%; margin-top: 10px;
@@ -123,49 +177,6 @@ footer {
 	.container .row { margin-bottom: 0px; padding-bottom: 20px; }
 }
 
-/* PAGE Styles
-================================================== */
-
-.container { background-color: white; }
-
-.page-content { padding-top: 80px; padding-bottom: 40px; }
-.resource-content { padding-top: 20px; padding-bottom: 40px; }
-
-.content-block { border-top: 10px solid $navy;
-	h2 { padding-top: 25px; }
-	h4 { padding-top: 10px; margin-bottom: 3px; }
-	.content-block-image { overflow: hidden; height: 100px; }
-}
-
-.content-callout { background-color: $dusty-blue; width: 50%; height: 345px; float: right;
-	.content-callout-text { color: white; padding: 37px; font-size: 20px; line-height: 30px;
-		.highlight { color: $teal; }
-	}
-}
-.content-image { width: 50%; float: left; height: 345px; overflow: hidden;
-	img { max-width: 100%; }
-	.slide { position: absolute; top: 15px; color: white; background-color:rgba(70, 168, 165, 0.8); padding: 25px; margin: 25px; display: none; width: 410px;
-		h2 { color: $navy; }
-		a { text-transform: uppercase; color: $orange; font-family: $gothic; font-size: 20px; line-height: 20px; }
-		a:hover { color: $navy; }
-	}
-}
-
-.resource-left { display: inline-block; }
-.resource-right { float: right;
-	.resource-right-textbox { padding: 15px; color: white; background-color: $navy; }
-}
-
-.read-more img { margin-top: 10px; }
-
-.last { margin-bottom: 0px !important; padding-bottom: 20px; }
-
-.big { -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.75); }
-
-/* FOOTER Styles
-================================================== */
-
-
 /* #Page Styles
 ================================================== */
 
@@ -174,6 +185,173 @@ footer {
 /* #Blog Styles
 ================================================== */
 
+
+/* #Checkbox Styles
+================================================== */
+
+.cb {
+	font-family: $gothic;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: $navy;
+	display: inline;
+	position: relative;
+	top: 8px;
+}
+
+.checkboxFive {
+	display: inline;
+	position: relative;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+.checkboxFive label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+  	left: 0;
+	background: white;
+	border:4px solid $teal;
+}
+.checkboxFive label:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 6px;
+	left: 7px;
+	border: 3px solid $navy;
+	border-top: none;
+	border-right: none;
+	color: $navy;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.checkboxFive label:hover::after {
+	opacity: 0.5;
+}
+.checkboxFive input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+/* #Dropdown Styles
+================================================== */
+
+.dropcontainer {
+	position:relative;
+	font-size: 16px;
+	color: #777;
+	}
+
+.trigger {
+	color: #777;
+	padding: 5px 5px 3px 5px;
+	font-size: 16px;
+	width: 100%;
+	background: #fff url(assets/img/arrow_down.png) 98% center no-repeat;
+	display: block;
+	border: 1px solid #ccc;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	font-family: $gothic;
+	color: $navy;
+	border: 4px solid $teal;
+	text-transform: uppercase;
+	font-size: 20px;
+	}
+
+.trigger:hover {
+	color: #777;
+	background: #f5f5f5 url(assets/img/arrow_down.png) 98% center no-repeat;
+	}
+
+.activetrigger {
+	color: #777;
+	padding: 5px 5px 3px 5px;
+	font-size: 16px;
+	width: 100%;
+	background: $navy url(assets/img/arrow_up.png) 98% center no-repeat;
+	display: block;
+	border: 1px solid #ccc;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: $gothic;
+	color: $teal;
+	border: 4px solid $navy;
+	text-transform: uppercase;
+	font-size: 20px;
+	}
+
+.activetrigger:hover {
+	background: $navy url(assets/img/arrow_up.png) 98% center no-repeat;
+	color: $teal;
+	}
+
+.activetrigger:active {
+	background: $navy url(assets/img/arrow_up.png) 98% center no-repeat;
+	color: $teal;
+	}
+
+.dropcontainer ul {
+	font-size: 16px;
+	border: 4px solid $navy;
+	border-top: none;
+	background: #fff;
+	list-style-type: none;
+	padding: 5px 5px 3px 5px;
+	margin: 0;
+	width: 100%;
+	z-index: 100;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: $gothic;
+	color: $navy;
+	text-transform: uppercase;
+	font-size: 20px;
+	}
+
+.dropcontainer ul li {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	}
+
+.dropcontainer ul li:hover {
+	background: #f5f5f5;
+	outline: none;
+	}
+
+.dropcontainer ul li:first-child {
+	display: none;
+	}
+
+.dropcontainer ul li:last-child {
+	border-bottom: none;
+	}
+
+.dropdownhidden {
+	display: none;
+	}
+
+.dropdownvisible {
+	height: auto;
+	}
 
 
 /* #Media Queries

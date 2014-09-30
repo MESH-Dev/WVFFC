@@ -21,76 +21,125 @@
     </div>
   </div>
 
-  <?php
+  <div class="row">
+    <div class="four columns">
+      <a class="resource-btn" href="#">For Farmers & Small Businesses</a>
+    </div>
+    <div class="four columns">
+      <a class="resource-btn" href="#">For Advocates & Getting Involved</a>
+    </div>
+    <div class="four columns">
+      <a class="resource-btn" href="#">Finding Local Farms</a>
+    </div>
+  </div>
 
-  $i = 1;
-  $r = 1;
+  <div class="row">
+    <div class="four columns">
+      <a class="resource-btn" href="#">Studies</a>
+    </div>
+    <div class="four columns">
+      <a class="resource-btn" href="#">Newsletter Archives</a>
+    </div>
+    <div class="four columns">
+      <a class="resource-btn" href="#">Show All</a>
+    </div>
+  </div>
 
-  ?>
+  <div class="row">
+    <div class="four columns">
+      <select class="turnintodropdown">
+        <option>All Regions</option>
+        <option>All Regions</option>
 
-  <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+        <?php
+          //GET regions for each post and add region to each block
+          $terms = get_terms( 'region' );
 
-    <?php
-
-      if ($r < 3) {
-          if ($i % 4 == 1) {
-            if ($i == 1) {
-              echo '<div class="row"><div class="resource-left">';
+          if ( $terms && ! is_wp_error( $terms ) ) :
+            foreach ( $terms as $term ) {
+              $t = strtolower(str_replace(" ", "-", $term->name));
+              echo '<option value="' . $t . '">' . $term->name . '</option>';
             }
-            echo '<div class="row">';
-          }
-      }
-      elseif ($r == 3) {
-          echo '<div class="row">';
-          $i = 1;
-          $r = $r + 1;
-      }
-      else {
-          if ($i % 6 == 1) {
-            echo '<div class="row">';
-          }
-      }
-
-    ?>
-
-     <div class="two columns content-block">
-
-       <?php
-
-        if (get_field('resource_image')) {
-            echo '<div class="content-block-image"><img src="'.get_field('resource_image').'" /></div>';
-        }
-
+          endif;
         ?>
 
-        <h4><?php the_title(); ?></h4>
-        <?php the_excerpt(); ?>
+  		</select>
+    </div>
+    <div class="eight columns">
+      <div class="checkboxFive">
+    		<input type="checkbox" value="1" id="c1" />
+  	  	<label for="c1"></label>
+    	</div>
+      <div class="cb">PDF's</div>
+      <div class="checkboxFive">
+        <input type="checkbox" value="1" id="c2" />
+        <label for="c2"></label>
+      </div>
+      <div class="cb">External Links</div>
+      <div class="checkboxFive">
+        <input type="checkbox" value="1" id="c3" />
+        <label for="c3"></label>
+      </div>
+      <div class="cb">Documents</div>
+      <div class="checkboxFive">
+        <input type="checkbox" value="1" id="c4" />
+        <label for="c4"></label>
+      </div>
+      <div class="cb">Useful Contacts</div>
 
-     </div>
+    </div>
+  </div>
 
-     <?php
+  <div class="four columns resource-right">
+    <div class="resource-right-textbox">
+      <?php echo get_field('contact', $resources_page) ?>
+    </div>
+  </div>
 
-        if($r < 3) {
-            if ($i % 4 == 0) {
-              echo '</div>';
-              $r = $r + 1;
-              if ($i == 8) {
-                echo '</div>';
-                echo '<div class="resource-right"><div class="four columns"><div class="resource-right-textbox">'.get_field('contact', $resources_page).'</div></div></div></div>';
-              }
-            }
-        }
-        else {
-            if ($i % 6 == 0) {
-              echo '</div>';
-            }
-        }
+  <div id="resources">
+    <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-       $i = $i + 1;
+      <?php
+        //GET regions for each post and add region to each block
+        $terms = get_the_terms( $post->ID, 'region' );
+        $regions = '';
 
-     ?>
+        if ( $terms && ! is_wp_error( $terms ) ) :
+          foreach ( $terms as $term ) {
+            $t = strtolower(str_replace(" ", "-", $term->name));
+            $regions  = $regions . $t . ' ';
+          }
+        endif;
+      ?>
 
-  <?php endwhile; ?>
+      <?php
+        //GET file types for each post and add file types to each block
+        $terms = get_the_terms( $post->ID, 'filetype' );
+        $file_types = '';
+
+        if ( $terms && ! is_wp_error( $terms ) ) :
+          foreach ( $terms as $term ) {
+            $f = strtolower(str_replace(" ", "-", $term->name));
+            $file_types  = $file_types . $f . ' ';
+          }
+        endif;
+      ?>
+
+      <div class="two columns content-block <?php echo $regions; ?> <?php echo $file_types; ?> ">
+
+         <?php
+           if (get_field('resource_image')) {
+               echo '<div class="content-block-image"><img src="'.get_field('resource_image').'" /></div>';
+           }
+         ?>
+
+         <a href="<?php echo get_permalink( $post->ID ); ?>"><h4><?php the_title(); ?></h4></a>
+         <?php the_excerpt(); ?>
+
+      </div>
+
+    <?php endwhile; ?>
+  </div>
 
 </div></div><!-- End of Container -->
 
