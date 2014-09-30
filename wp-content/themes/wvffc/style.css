@@ -172,8 +172,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="url"],
-textarea,
-select {
+textarea {
   border: 1px solid #FFF;
   padding: 6px 4px;
   outline: none;
@@ -185,12 +184,25 @@ select {
   background: #fff;
 }
 
-/* line 150, assets/sass/_base.scss */
+/* line 149, assets/sass/_base.scss */
 select {
-  padding: 0;
+  display: block;
+  width: 100%;
+  background: white;
+  height: 45px;
+  border: 4px solid #46a8a5;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  font-size: 20px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-family: "alternate-gothic-no-1-d";
+  color: #2e485b;
+  padding-top: 4px;
+  background: url("assets/img/arrow_down.png") no-repeat 98%;
 }
 
-/* line 152, assets/sass/_base.scss */
+/* line 164, assets/sass/_base.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -203,12 +215,12 @@ textarea:focus {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
-/* line 162, assets/sass/_base.scss */
+/* line 174, assets/sass/_base.scss */
 textarea {
   min-height: 60px;
 }
 
-/* line 164, assets/sass/_base.scss */
+/* line 176, assets/sass/_base.scss */
 label,
 legend {
   display: block;
@@ -216,17 +228,12 @@ legend {
   font-size: 14px;
 }
 
-/* line 169, assets/sass/_base.scss */
-select {
-  width: 220px;
-}
-
-/* line 171, assets/sass/_base.scss */
+/* line 181, assets/sass/_base.scss */
 input[type="checkbox"] {
   display: inline;
 }
 
-/* line 173, assets/sass/_base.scss */
+/* line 183, assets/sass/_base.scss */
 label span,
 legend span {
   font-weight: normal;
@@ -236,7 +243,7 @@ legend span {
 
 /* #Images
 ================================================== */
-/* line 182, assets/sass/_base.scss */
+/* line 192, assets/sass/_base.scss */
 img.scale-with-grid {
   max-width: 100%;
   height: auto;
@@ -244,60 +251,60 @@ img.scale-with-grid {
 
 /* WordPress Image Styles
    ========================================================================== */
-/* line 189, assets/sass/_base.scss */
+/* line 199, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 190, assets/sass/_base.scss */
+/* line 200, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 191, assets/sass/_base.scss */
+/* line 201, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 192, assets/sass/_base.scss */
+/* line 202, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 193, assets/sass/_base.scss */
+/* line 203, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 194, assets/sass/_base.scss */
+/* line 204, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 195, assets/sass/_base.scss */
+/* line 205, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 196, assets/sass/_base.scss */
+/* line 206, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 197, assets/sass/_base.scss */
+/* line 207, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 198, assets/sass/_base.scss */
+/* line 208, assets/sass/_base.scss */
 .wp-caption {
   background: #FFF;
   border: 1px solid #472A2B;
@@ -306,22 +313,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 199, assets/sass/_base.scss */
+/* line 209, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 200, assets/sass/_base.scss */
+/* line 210, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 201, assets/sass/_base.scss */
+/* line 211, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 202, assets/sass/_base.scss */
+/* line 212, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -331,7 +338,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 203, assets/sass/_base.scss */
+/* line 213, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text, .gallery-caption {
   font-size: 11px;
   line-height: 17px;
@@ -339,7 +346,7 @@ a img.aligncenter {
   padding: 0 4px 5px;
 }
 
-/* line 206, assets/sass/_base.scss */
+/* line 216, assets/sass/_base.scss */
 .add-bottom {
   margin-bottom: 20px !important;
 }
@@ -1185,7 +1192,7 @@ header .main-nav #mainNav ul li ul {
 }
 /* line 26, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li:nth-child(1) ul:before {
-  content: 'Our Background >';
+  content: 'Who We Are >';
   position: absolute;
   left: -255px;
   padding-left: 35px;
@@ -1198,7 +1205,7 @@ header .main-nav #mainNav ul li:nth-child(1) ul:before {
 }
 /* line 27, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li:nth-child(2) ul:before {
-  content: 'Our Projects >';
+  content: 'Our Impact on WV >';
   position: absolute;
   left: -255px;
   padding-left: 35px;
@@ -1211,7 +1218,7 @@ header .main-nav #mainNav ul li:nth-child(2) ul:before {
 }
 /* line 28, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li:nth-child(3) ul:before {
-  content: 'Our Causes >';
+  content: 'Motivation for Change >';
   position: absolute;
   left: -255px;
   padding-left: 35px;
@@ -1222,36 +1229,41 @@ header .main-nav #mainNav ul li:nth-child(3) ul:before {
   text-transform: none;
   background-color: white;
 }
-/* line 29, assets/sass/_layout.scss */
-header .main-nav #mainNav ul li:nth-child(4) ul:before {
-  content: 'What People Are Saying >';
-  position: absolute;
-  padding-left: 35px;
-  width: 100%;
-  left: -255px;
-  z-index: -1;
-  font-family: "chaparral-pro";
-  font-style: italic;
-  text-transform: none;
-  background-color: white;
+/* line 30, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li:nth-child(4) ul {
+  padding-left: 50px;
+  width: 715px;
 }
 /* line 31, assets/sass/_layout.scss */
+header .main-nav #mainNav ul li:nth-child(4) ul:before {
+  content: 'Current Headlines and Video >';
+  position: absolute;
+  padding-left: 35px;
+  width: 100%;
+  left: -255px;
+  z-index: -1;
+  font-family: "chaparral-pro";
+  font-style: italic;
+  text-transform: none;
+  background-color: white;
+}
+/* line 33, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li:hover ul {
   display: block;
 }
-/* line 33, assets/sass/_layout.scss */
+/* line 35, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li.current_page_ancestor ul {
   display: block;
 }
-/* line 34, assets/sass/_layout.scss */
+/* line 36, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li.current_page_item ul {
   display: block;
 }
-/* line 35, assets/sass/_layout.scss */
+/* line 37, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li.current_page_item a {
   border-bottom: 5px solid #d75502;
 }
-/* line 37, assets/sass/_layout.scss */
+/* line 39, assets/sass/_layout.scss */
 header .main-nav #mainNav ul > li.current_page_ancestor:after {
   content: url("assets/img/arrow.png");
   position: absolute;
@@ -1260,23 +1272,23 @@ header .main-nav #mainNav ul > li.current_page_ancestor:after {
   z-index: 2;
   display: inline;
 }
-/* line 39, assets/sass/_layout.scss */
+/* line 41, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li {
   display: inline;
 }
-/* line 40, assets/sass/_layout.scss */
+/* line 42, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li:hover a {
   color: #64381c;
 }
-/* line 41, assets/sass/_layout.scss */
+/* line 43, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li:hover:after {
   display: none;
 }
-/* line 42, assets/sass/_layout.scss */
+/* line 44, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li a {
   color: #d75502;
 }
-/* line 44, assets/sass/_layout.scss */
+/* line 46, assets/sass/_layout.scss */
 header .main-nav #mainNav #search {
   display: inline;
   float: right;
@@ -1284,7 +1296,7 @@ header .main-nav #mainNav #search {
   padding: 25px 25px 25px 20px;
   cursor: pointer;
 }
-/* line 45, assets/sass/_layout.scss */
+/* line 47, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box {
   display: none;
   position: absolute;
@@ -1293,7 +1305,7 @@ header .main-nav #mainNav #search-box {
   z-index: 1;
   width: 332px;
 }
-/* line 46, assets/sass/_layout.scss */
+/* line 48, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-input {
   background-color: #505e6d;
   display: inline-block;
@@ -1302,31 +1314,31 @@ header .main-nav #mainNav #search-box .search-box-input {
   padding: 10px;
   height: 44px;
 }
-/* line 47, assets/sass/_layout.scss */
+/* line 49, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-input input {
   width: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-/* line 49, assets/sass/_layout.scss */
+/* line 51, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-button {
   background-color: #d75502;
   display: inline-block;
   float: left;
   text-align: center;
 }
-/* line 50, assets/sass/_layout.scss */
+/* line 52, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-button input {
   background: none;
   color: white;
   padding: 18px;
 }
-/* line 53, assets/sass/_layout.scss */
+/* line 55, assets/sass/_layout.scss */
 header .main-nav #mainNav #search-box .search-box-button:hover input {
   color: #2e485b;
 }
-/* line 58, assets/sass/_layout.scss */
+/* line 60, assets/sass/_layout.scss */
 header .main-nav #donate {
   float: left;
   background-color: #46a8a5;
@@ -1337,26 +1349,26 @@ header .main-nav #donate {
   height: 100%;
   cursor: pointer;
 }
-/* line 59, assets/sass/_layout.scss */
+/* line 61, assets/sass/_layout.scss */
 header .main-nav #donate span {
   color: #2e485b;
   text-align: center;
   display: block;
   margin: 25px auto;
 }
-/* line 60, assets/sass/_layout.scss */
+/* line 62, assets/sass/_layout.scss */
 header .main-nav #donate span a {
   color: #2e485b;
 }
-/* line 63, assets/sass/_layout.scss */
+/* line 65, assets/sass/_layout.scss */
 header .main-nav #donate:hover {
   background-color: #2e485b;
 }
-/* line 64, assets/sass/_layout.scss */
+/* line 66, assets/sass/_layout.scss */
 header .main-nav #donate:hover span {
   color: #46a8a5;
 }
-/* line 65, assets/sass/_layout.scss */
+/* line 67, assets/sass/_layout.scss */
 header .main-nav #donate:hover span a {
   color: #46a8a5;
 }
@@ -1367,14 +1379,14 @@ header .main-nav #donate:hover span a {
 ================================================== */
 /* Breadcrumbs
 ================================================== */
-/* line 85, assets/sass/_layout.scss */
+/* line 87, assets/sass/_layout.scss */
 #breadcrumbs {
   list-style: none;
   margin-bottom: 20px;
   margin-left: 20px;
   overflow: hidden;
 }
-/* line 86, assets/sass/_layout.scss */
+/* line 88, assets/sass/_layout.scss */
 #breadcrumbs li {
   float: left;
   margin-right: 15px;
@@ -1383,7 +1395,7 @@ header .main-nav #donate:hover span a {
   font-size: 14px;
   color: #707070;
 }
-/* line 87, assets/sass/_layout.scss */
+/* line 89, assets/sass/_layout.scss */
 #breadcrumbs .separator {
   font-weight: 700;
   font-size: 20px;
@@ -1392,37 +1404,37 @@ header .main-nav #donate:hover span a {
 
 /* Homepage Styles
 ================================================== */
-/* line 94, assets/sass/_layout.scss */
+/* line 96, assets/sass/_layout.scss */
 .home-callout {
   background-color: #505e6d;
   width: 35%;
   height: 345px;
   float: left;
 }
-/* line 95, assets/sass/_layout.scss */
+/* line 97, assets/sass/_layout.scss */
 .home-callout .home-callout-text {
   color: white;
   padding: 37px;
   font-size: 20px;
   line-height: 30px;
 }
-/* line 96, assets/sass/_layout.scss */
+/* line 98, assets/sass/_layout.scss */
 .home-callout .home-callout-text .highlight {
   color: #46a8a5;
 }
 
-/* line 99, assets/sass/_layout.scss */
+/* line 101, assets/sass/_layout.scss */
 .home-image {
   width: 65%;
   float: left;
   height: 345px;
   overflow: hidden;
 }
-/* line 100, assets/sass/_layout.scss */
+/* line 102, assets/sass/_layout.scss */
 .home-image img {
   max-width: 100%;
 }
-/* line 101, assets/sass/_layout.scss */
+/* line 103, assets/sass/_layout.scss */
 .home-image .slide {
   position: absolute;
   top: 15px;
@@ -1432,11 +1444,11 @@ header .main-nav #donate:hover span a {
   margin: 25px;
   display: none;
 }
-/* line 102, assets/sass/_layout.scss */
+/* line 104, assets/sass/_layout.scss */
 .home-image .slide h2 {
   color: #2e485b;
 }
-/* line 103, assets/sass/_layout.scss */
+/* line 105, assets/sass/_layout.scss */
 .home-image .slide a {
   text-transform: uppercase;
   color: #d75502;
@@ -1444,11 +1456,11 @@ header .main-nav #donate:hover span a {
   font-size: 20px;
   line-height: 20px;
 }
-/* line 104, assets/sass/_layout.scss */
+/* line 106, assets/sass/_layout.scss */
 .home-image .slide a:hover {
   color: #2e485b;
 }
-/* line 106, assets/sass/_layout.scss */
+/* line 108, assets/sass/_layout.scss */
 .home-image .slide:before {
   content: url("assets/img/teal_arrow.png");
   position: absolute;
@@ -1457,7 +1469,7 @@ header .main-nav #donate:hover span a {
   opacity: 0.8;
 }
 
-/* line 109, assets/sass/_layout.scss */
+/* line 111, assets/sass/_layout.scss */
 .home-excerpt {
   border-top: 10px solid #505e6d;
   padding-top: 15px;
@@ -1466,91 +1478,92 @@ header .main-nav #donate:hover span a {
 
 /* PAGE Styles
 ================================================== */
-/* line 114, assets/sass/_layout.scss */
+/* line 116, assets/sass/_layout.scss */
 .container {
   background-color: white;
 }
 
-/* line 116, assets/sass/_layout.scss */
+/* line 118, assets/sass/_layout.scss */
 .page-content {
   padding-top: 80px;
   padding-bottom: 40px;
 }
 
-/* line 117, assets/sass/_layout.scss */
+/* line 119, assets/sass/_layout.scss */
 .resource-content {
   padding-top: 20px;
   padding-bottom: 40px;
 }
 
-/* line 118, assets/sass/_layout.scss */
+/* line 120, assets/sass/_layout.scss */
 .search-content {
   padding-top: 20px;
   padding-bottom: 40px;
 }
-/* line 119, assets/sass/_layout.scss */
+/* line 121, assets/sass/_layout.scss */
 .search-content h2 a {
   color: #d75502;
 }
-/* line 120, assets/sass/_layout.scss */
+/* line 122, assets/sass/_layout.scss */
 .search-content h2 a:hover {
   color: #2e485b;
 }
 
-/* line 123, assets/sass/_layout.scss */
+/* line 125, assets/sass/_layout.scss */
 .content-block {
   border-top: 10px solid #2e485b;
+  height: 260px;
 }
-/* line 124, assets/sass/_layout.scss */
+/* line 126, assets/sass/_layout.scss */
 .content-block h2 {
   padding-top: 25px;
 }
-/* line 125, assets/sass/_layout.scss */
+/* line 127, assets/sass/_layout.scss */
 .content-block h4 {
   padding-top: 10px;
   margin-bottom: 3px;
 }
-/* line 126, assets/sass/_layout.scss */
+/* line 128, assets/sass/_layout.scss */
 .content-block h4:hover {
   color: #2e485b;
 }
-/* line 127, assets/sass/_layout.scss */
+/* line 129, assets/sass/_layout.scss */
 .content-block .content-block-image {
   overflow: hidden;
   height: 100px;
 }
 
-/* line 130, assets/sass/_layout.scss */
+/* line 132, assets/sass/_layout.scss */
 .content-callout {
   background-color: #505e6d;
   width: 50%;
   height: 345px;
   float: right;
 }
-/* line 131, assets/sass/_layout.scss */
+/* line 133, assets/sass/_layout.scss */
 .content-callout .content-callout-text {
   color: white;
   padding: 37px;
   font-size: 20px;
   line-height: 30px;
 }
-/* line 132, assets/sass/_layout.scss */
+/* line 134, assets/sass/_layout.scss */
 .content-callout .content-callout-text .highlight {
   color: #46a8a5;
 }
 
-/* line 135, assets/sass/_layout.scss */
+/* line 137, assets/sass/_layout.scss */
 .content-image {
   width: 50%;
   float: left;
   height: 345px;
   overflow: hidden;
 }
-/* line 136, assets/sass/_layout.scss */
+/* line 138, assets/sass/_layout.scss */
 .content-image img {
   max-width: 100%;
 }
-/* line 137, assets/sass/_layout.scss */
+/* line 139, assets/sass/_layout.scss */
 .content-image .slide {
   position: absolute;
   top: 80px;
@@ -1561,11 +1574,11 @@ header .main-nav #donate:hover span a {
   display: none;
   width: 410px;
 }
-/* line 138, assets/sass/_layout.scss */
+/* line 140, assets/sass/_layout.scss */
 .content-image .slide h2 {
   color: #2e485b;
 }
-/* line 139, assets/sass/_layout.scss */
+/* line 141, assets/sass/_layout.scss */
 .content-image .slide a {
   text-transform: uppercase;
   color: #d75502;
@@ -1573,46 +1586,68 @@ header .main-nav #donate:hover span a {
   font-size: 20px;
   line-height: 20px;
 }
-/* line 140, assets/sass/_layout.scss */
+/* line 142, assets/sass/_layout.scss */
 .content-image .slide a:hover {
   color: #2e485b;
 }
 
-/* line 144, assets/sass/_layout.scss */
+/* line 146, assets/sass/_layout.scss */
+.resource-btn {
+  display: block;
+  background: #46a8a5;
+  color: #2e485b;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "alternate-gothic-no-1-d";
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* line 147, assets/sass/_layout.scss */
+.resource-btn:hover {
+  background: #2e485b;
+  color: #46a8a5;
+}
+
+/* line 149, assets/sass/_layout.scss */
 .resource-left {
   display: inline-block;
 }
 
-/* line 145, assets/sass/_layout.scss */
+/* line 150, assets/sass/_layout.scss */
 .resource-right {
-  float: right;
+  float: right !important;
+  height: 540px;
+  max-height: 540px;
 }
-/* line 146, assets/sass/_layout.scss */
+/* line 151, assets/sass/_layout.scss */
 .resource-right .resource-right-textbox {
-  padding: 15px;
+  padding: 25px;
   color: white;
   background-color: #2e485b;
 }
 
-/* line 149, assets/sass/_layout.scss */
+/* line 154, assets/sass/_layout.scss */
 .read-more img {
   margin-top: 10px;
   background-color: #46a8a5;
   border-radius: 12px;
 }
 
-/* line 150, assets/sass/_layout.scss */
+/* line 155, assets/sass/_layout.scss */
 .read-more img:hover {
   background-color: #2e485b;
 }
 
-/* line 152, assets/sass/_layout.scss */
+/* line 157, assets/sass/_layout.scss */
 .last {
   margin-bottom: 0px !important;
   padding-bottom: 20px;
 }
 
-/* line 154, assets/sass/_layout.scss */
+/* line 159, assets/sass/_layout.scss */
 .big {
   -webkit-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.75);
@@ -1621,7 +1656,7 @@ header .main-nav #donate:hover span a {
 
 /* FOOTER Styles
 ================================================== */
-/* line 160, assets/sass/_layout.scss */
+/* line 165, assets/sass/_layout.scss */
 footer .top-footer {
   background-image: url("assets/img/footer.jpg");
   background-repeat: no-repeat;
@@ -1629,7 +1664,7 @@ footer .top-footer {
   width: 100%;
   margin-top: 10px;
 }
-/* line 161, assets/sass/_layout.scss */
+/* line 166, assets/sass/_layout.scss */
 footer .top-footer .top-footer-box {
   border: 4px solid white;
   margin-top: 13px;
@@ -1643,38 +1678,38 @@ footer .top-footer .top-footer-box {
   text-align: center;
   padding: 16px 18px;
 }
-/* line 162, assets/sass/_layout.scss */
+/* line 167, assets/sass/_layout.scss */
 footer .top-footer .top-footer-box img {
   margin-top: 5px;
 }
-/* line 165, assets/sass/_layout.scss */
+/* line 170, assets/sass/_layout.scss */
 footer .bottom-footer {
   font-family: "chaparral-pro";
   font-size: 12px;
   line-height: 18px;
   padding: 14px;
 }
-/* line 166, assets/sass/_layout.scss */
+/* line 171, assets/sass/_layout.scss */
 footer .bottom-footer .bottom-footer-left {
   float: left;
 }
-/* line 167, assets/sass/_layout.scss */
+/* line 172, assets/sass/_layout.scss */
 footer .bottom-footer .bottom-footer-right {
   float: right;
   text-align: right;
 }
-/* line 169, assets/sass/_layout.scss */
+/* line 174, assets/sass/_layout.scss */
 footer .two {
   margin: 0px !important;
   padding-right: 15px;
   padding-left: 15px;
 }
-/* line 170, assets/sass/_layout.scss */
+/* line 175, assets/sass/_layout.scss */
 footer .two:hover {
   background-color: #46a8a5;
   opacity: 0.7;
 }
-/* line 172, assets/sass/_layout.scss */
+/* line 177, assets/sass/_layout.scss */
 footer .container .row {
   margin-bottom: 0px;
   padding-bottom: 20px;
@@ -1684,6 +1719,193 @@ footer .container .row {
 ================================================== */
 /* #Blog Styles
 ================================================== */
+/* #Checkbox Styles
+================================================== */
+/* line 192, assets/sass/_layout.scss */
+.cb {
+  font-family: "alternate-gothic-no-1-d";
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #2e485b;
+  display: inline;
+  position: relative;
+  top: 8px;
+}
+
+/* line 202, assets/sass/_layout.scss */
+.checkboxFive {
+  display: inline;
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* line 208, assets/sass/_layout.scss */
+.checkboxFive label {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 0;
+  background: white;
+  border: 4px solid #46a8a5;
+}
+
+/* line 218, assets/sass/_layout.scss */
+.checkboxFive label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 6px;
+  left: 7px;
+  border: 3px solid #2e485b;
+  border-top: none;
+  border-right: none;
+  color: #2e485b;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* line 238, assets/sass/_layout.scss */
+.checkboxFive label:hover::after {
+  opacity: 0.5;
+}
+
+/* line 241, assets/sass/_layout.scss */
+.checkboxFive input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+/* #Dropdown Styles
+================================================== */
+/* line 248, assets/sass/_layout.scss */
+.dropcontainer {
+  position: relative;
+  font-size: 16px;
+  color: #777;
+}
+
+/* line 254, assets/sass/_layout.scss */
+.trigger {
+  color: #777;
+  padding: 5px 5px 3px 5px;
+  font-size: 16px;
+  width: 100%;
+  background: #fff url(assets/img/arrow_down.png) 98% center no-repeat;
+  display: block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  font-family: "alternate-gothic-no-1-d";
+  color: #2e485b;
+  border: 4px solid #46a8a5;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* line 276, assets/sass/_layout.scss */
+.trigger:hover {
+  color: #777;
+  background: #f5f5f5 url(assets/img/arrow_down.png) 98% center no-repeat;
+}
+
+/* line 281, assets/sass/_layout.scss */
+.activetrigger {
+  color: #777;
+  padding: 5px 5px 3px 5px;
+  font-size: 16px;
+  width: 100%;
+  background: #2e485b url(assets/img/arrow_up.png) 98% center no-repeat;
+  display: block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "alternate-gothic-no-1-d";
+  color: #46a8a5;
+  border: 4px solid #2e485b;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* line 299, assets/sass/_layout.scss */
+.activetrigger:hover {
+  background: #2e485b url(assets/img/arrow_up.png) 98% center no-repeat;
+  color: #46a8a5;
+}
+
+/* line 304, assets/sass/_layout.scss */
+.activetrigger:active {
+  background: #2e485b url(assets/img/arrow_up.png) 98% center no-repeat;
+  color: #46a8a5;
+}
+
+/* line 309, assets/sass/_layout.scss */
+.dropcontainer ul {
+  font-size: 16px;
+  border: 4px solid #2e485b;
+  border-top: none;
+  background: #fff;
+  list-style-type: none;
+  padding: 5px 5px 3px 5px;
+  margin: 0;
+  width: 100%;
+  z-index: 100;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "alternate-gothic-no-1-d";
+  color: #2e485b;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* line 328, assets/sass/_layout.scss */
+.dropcontainer ul li {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 335, assets/sass/_layout.scss */
+.dropcontainer ul li:hover {
+  background: #f5f5f5;
+  outline: none;
+}
+
+/* line 340, assets/sass/_layout.scss */
+.dropcontainer ul li:first-child {
+  display: none;
+}
+
+/* line 344, assets/sass/_layout.scss */
+.dropcontainer ul li:last-child {
+  border-bottom: none;
+}
+
+/* line 348, assets/sass/_layout.scss */
+.dropdownhidden {
+  display: none;
+}
+
+/* line 352, assets/sass/_layout.scss */
+.dropdownvisible {
+  height: auto;
+}
+
 /* #Media Queries
 ================================================== */
 /* Smaller than standard 960 (devices and browsers) */
