@@ -1,5 +1,3 @@
-var current_region = 'All Regions';
-
 function tamingselect()
 {
 
@@ -19,6 +17,9 @@ function tamingselect()
 	var count=0;
 	var toreplace=new Array();
 	var sels=document.getElementsByTagName('select');
+
+	var current_region = "All Regions";
+
 	for(var i=0;i<sels.length;i++){
 		if (ts_check(sels[i],ts_selectclass))
 		{
@@ -63,8 +64,8 @@ function tamingselect()
 				newli.onclick=function(){
 
 					filter_resources(this.firstChild.firstChild.nodeValue);
-
 					current_region = this.firstChild.firstChild.nodeValue;
+					console.log(current_region);
 
 					this.elm.value=this.v;
 					ts_swapclass(this.istrigger,ts_triggeron,ts_triggeroff);
@@ -83,6 +84,31 @@ function tamingselect()
 			toreplace[count]=sels[i];
 			count++;
 		}
+
+		jQuery('#c1').click(function() {
+			filter_resources(current_region);
+			console.log('c1: ' + current_region);
+		});
+
+		jQuery('#c2').click(function() {
+			filter_resources(current_region);
+			console.log('c2: ' + current_region);
+		});
+
+		jQuery('#c3').click(function() {
+			filter_resources(current_region);
+			console.log('c3: ' + current_region);
+		});
+
+		jQuery('#c4').click(function() {
+			filter_resources(current_region);
+			console.log('c4: ' + current_region);
+		});
+
+		jQuery('#c5').click(function() {
+			filter_resources(current_region);
+			console.log('c5: ' + current_region);
+		});
 	}
 
 /*
@@ -117,29 +143,6 @@ function tamingselect()
 		toreplace[i].parentNode.removeChild(toreplace[i]);
 	}
 
-	jQuery('#c5').prop("checked", true);
-
-	jQuery('#c1').click(function() {
-		check_boxes();
-	});
-
-	jQuery('#c2').click(function() {
-		check_boxes();
-	});
-
-	jQuery('#c3').click(function() {
-		check_boxes();
-	});
-
-	jQuery('#c4').click(function() {
-		check_boxes();
-	});
-
-	jQuery('#c5').click(function() {
-		check_boxes();
-	});
-
-
 	function ts_check(o,c)
 	{
 	 	return new RegExp('\\b'+c+'\\b').test(o.className);
@@ -169,32 +172,35 @@ function tamingselect()
 		}
 	}
 
-	function check_boxes() {
-		console.log('here');
+}
 
-		jQuery('#resources').children('div').hide();
+function check_boxes() {
+	console.log('here');
 
-		if (jQuery('#c1').is(':checked')) {
-			jQuery('#resources').children('.pdf').show();
-		}
-		if (jQuery('#c2').is(':checked')) {
-			jQuery('#resources').children('.external-links').show();
-		}
-		if (jQuery('#c3').is(':checked')) {
-			jQuery('#resources').children('.documents').show();
-		}
-		if (jQuery('#c4').is(':checked')) {
-			jQuery('#resources').children('.useful-contacts').show();
-		}
-		if (jQuery('#c5').is(':checked')) {
-			jQuery('#resources').children('div').show();
-		}
+	jQuery('#resources').children('div').hide();
 
+	if (jQuery('#c1').is(':checked')) {
+		jQuery('#resources').children('.pdf').show();
 	}
+	if (jQuery('#c2').is(':checked')) {
+		jQuery('#resources').children('.external-links').show();
+	}
+	if (jQuery('#c3').is(':checked')) {
+		jQuery('#resources').children('.documents').show();
+	}
+	if (jQuery('#c4').is(':checked')) {
+		jQuery('#resources').children('.useful-contacts').show();
+	}
+	if (jQuery('#c5').is(':checked')) {
+		jQuery('#resources').children('div').show();
+	}
+
 }
 
 window.onload=function()
 {
+	jQuery('#c5').prop("checked", true);
+
 	tamingselect();
 	// add more functions if necessary
 
