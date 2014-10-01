@@ -1,5 +1,8 @@
+var current_region = 'All Regions';
+
 function tamingselect()
 {
+
 	if(!document.getElementById && !document.createTextNode){return;}
 
 // Classes for the link and the visible dropdown
@@ -61,6 +64,8 @@ function tamingselect()
 
 					filter_resources(this.firstChild.firstChild.nodeValue);
 
+					current_region = this.firstChild.firstChild.nodeValue;
+
 					this.elm.value=this.v;
 					ts_swapclass(this.istrigger,ts_triggeron,ts_triggeroff);
 					ts_swapclass(this.parentNode,ts_dropdownopen,ts_dropdownclosed)
@@ -112,79 +117,26 @@ function tamingselect()
 		toreplace[i].parentNode.removeChild(toreplace[i]);
 	}
 
+	jQuery('#c5').prop("checked", true);
 
 	jQuery('#c1').click(function() {
-		if (jQuery('#c1').is(':checked')) {
-			jQuery('#resources').children('div').hide();
-			jQuery('#resources').children('.pdf').show();
-		} else {
-			jQuery('#resources').children('div').show();
-
-			if (jQuery('#c2').is(':checked')) {
-				jQuery('#resources').children('.external-links').hide();
-			}
-			if (jQuery('#c3').is(':checked')) {
-				jQuery('#resources').children('.documents').hide();
-			}
-			if (jQuery('#c4').is(':checked')) {
-				jQuery('#resources').children('.useful-contacts').hide();
-			}
-
-		}
+		check_boxes();
 	});
 
 	jQuery('#c2').click(function() {
-		if (jQuery('#c2').is(':checked')) {
-			jQuery('#resources').children('div:not(.external-links)').hide();
-		} else {
-			jQuery('#resources').children('div').show();
-
-			if (jQuery('#c1').is(':checked')) {
-				jQuery('#resources').children('.pdf').hide();
-			}
-			if (jQuery('#c3').is(':checked')) {
-				jQuery('#resources').children('.documents').hide();
-			}
-			if (jQuery('#c4').is(':checked')) {
-				jQuery('#resources').children('.useful-contacts').hide();
-			}
-		}
+		check_boxes();
 	});
 
 	jQuery('#c3').click(function() {
-		if (jQuery('#c3').is(':checked')) {
-			jQuery('#resources').children('div:not(.documents)').hide();
-		} else {
-			jQuery('#resources').children('div').show();
-
-			if (jQuery('#c1').is(':checked')) {
-				jQuery('#resources').children('.pdf').hide();
-			}
-			if (jQuery('#c2').is(':checked')) {
-				jQuery('#resources').children('.external-links').hide();
-			}
-			if (jQuery('#c4').is(':checked')) {
-				jQuery('#resources').children('.useful-contacts').hide();
-			}
-		}
+		check_boxes();
 	});
 
 	jQuery('#c4').click(function() {
-		if (jQuery('#c4').is(':checked')) {
-			jQuery('#resources').children('div:not(.useful-contacts)').hide();
-		} else {
-			jQuery('#resources').children('div').show();
+		check_boxes();
+	});
 
-			if (jQuery('#c1').is(':checked')) {
-				jQuery('#resources').children('.pdf').hide();
-			}
-			if (jQuery('#c2').is(':checked')) {
-				jQuery('#resources').children('.external-links').hide();
-			}
-			if (jQuery('#c3').is(':checked')) {
-				jQuery('#resources').children('.documents').hide();
-			}
-		}
+	jQuery('#c5').click(function() {
+		check_boxes();
 	});
 
 
@@ -207,12 +159,37 @@ function tamingselect()
 		str = str.replace(" ","-").toLowerCase();
 
 		if (str == "all-regions") {
-			jQuery('#resources').children('div').show();
+			check_boxes();
+			// jQuery('#resources').children('div').show();
 		}
 		else {
+			check_boxes();
 			jQuery('#resources').children('div:not(.' + str  + ')').hide();
-			jQuery('#resources').children('div.' + str).show();
+			// jQuery('#resources').children('div.' + str).show();
 		}
+	}
+
+	function check_boxes() {
+		console.log('here');
+
+		jQuery('#resources').children('div').hide();
+
+		if (jQuery('#c1').is(':checked')) {
+			jQuery('#resources').children('.pdf').show();
+		}
+		if (jQuery('#c2').is(':checked')) {
+			jQuery('#resources').children('.external-links').show();
+		}
+		if (jQuery('#c3').is(':checked')) {
+			jQuery('#resources').children('.documents').show();
+		}
+		if (jQuery('#c4').is(':checked')) {
+			jQuery('#resources').children('.useful-contacts').show();
+		}
+		if (jQuery('#c5').is(':checked')) {
+			jQuery('#resources').children('div').show();
+		}
+
 	}
 }
 

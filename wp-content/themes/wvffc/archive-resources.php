@@ -86,7 +86,11 @@
         <label for="c4"></label>
       </div>
       <div class="cb">Useful Contacts</div>
-
+      <div class="checkboxFive">
+        <input type="checkbox" value="1" id="c5" />
+        <label for="c5"></label>
+      </div>
+      <div class="cb">All</div>
     </div>
   </div>
 
