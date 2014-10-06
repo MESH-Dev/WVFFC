@@ -38,10 +38,12 @@
               echo '<div class="row">';
             }
 
-            echo '<div class="four columns content-block">';
+            echo '<div class="four columns page-content-block">';
 
               if (get_sub_field('content_image')) {
+                  echo '<div class="page-content-block-image">';
                   echo '<img src="'.get_sub_field('content_image').'" />';
+                  echo '</div>';
               }
 
               echo '<h2>'.get_sub_field('content_headline').'</h2>';

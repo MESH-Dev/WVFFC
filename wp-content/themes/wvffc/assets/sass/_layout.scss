@@ -129,6 +129,13 @@ header{
 	.content-block-image { overflow: hidden; height: 100px; }
 }
 
+.page-content-block { border-top: 10px solid $navy;
+	h2 { padding-top: 25px; }
+	h4 { padding-top: 10px; margin-bottom: 3px; }
+	h4:hover { color: $navy; }
+	.page-content-block-image { overflow: hidden; height: 100px; }
+}
+
 .content-callout { background-color: $dusty-blue; width: 50%; height: 345px; float: right;
 	.content-callout-text { color: white; padding: 37px; font-size: 20px; line-height: 30px;
 		.highlight { color: $teal; }
