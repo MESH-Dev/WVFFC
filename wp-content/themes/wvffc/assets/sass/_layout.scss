@@ -178,10 +178,13 @@ footer {
 		.bottom-footer-left { float: left; }
 		.bottom-footer-right { float: right; text-align: right; }
 	}
-	.two { margin: 0px !important; padding-right: 15px; padding-left: 15px; }
-	.two:hover { background-color: $teal; opacity: 0.7; }
+	.two { margin: 0px !important; padding-right: 15px; padding-left: 15px; position: relative; }
 
 	.container .row { margin-bottom: 0px; padding-bottom: 20px; }
+
+	.teal-image { position: absolute; left: 0px; opacity: 0; }
+	.teal-image:hover { opacity: 0.6; }
+
 }
 
 /* #Page Styles

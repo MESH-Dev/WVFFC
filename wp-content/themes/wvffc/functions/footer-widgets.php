@@ -40,7 +40,7 @@ class wvffc_footer_widgets extends WP_Widget{
     //output
 
     if (!empty($title)){
-      echo '<a href=' . $link . '><div class="two columns"><div class="top-footer-box"><div>' . $title . '</div><img src="' .get_bloginfo('template_directory') . '/assets/img/arrow_icon.png" /></div></div></a>';
+      echo '<a href=' . $link . '><div class="two columns"><img src="' . get_bloginfo('template_directory') . '/assets/img/teal.png" class="teal-image" /><div class="top-footer-box"><div>' . $title . '</div><img src="' .get_bloginfo('template_directory') . '/assets/img/arrow_icon.png" /></div></div></a>';
     }
 
 
