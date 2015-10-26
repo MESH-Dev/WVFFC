@@ -1,0 +1,50 @@
+/* #Typography
+================================================== */
+	body{ font-family: $chaparral, sans-serif; font-size: 16px; line-height: 20px; color: $black; }
+	h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+	h1 { font-family: $gothic, sans-serif; color: $navy; font-size: 64px; line-height: 64px; margin-bottom: 10px; }
+	h2{ font-family: $gothic, sans-serif; text-transform: uppercase; color: $orange; font-size: 40px; line-height: 40px; margin-bottom: 10px; }
+	h3 { font-family: $chaparral, sans-serif; color: $navy; font-size: 20px; line-height: 30px; margin-bottom: 10px; }
+	h4 { font-family: $gothic, sans-serif; text-transform: uppercase; color: $orange; font-size: 22px; line-height: 22px; margin-bottom: 10px; }
+	h5 { font-family: $gothic, sans-serif; text-transform: uppercase; color: $teal; font-size: 20px; line-height: 20px; margin-bottom: 10px; }
+	h6 { font-family: $chaparral, sans-serif; font-size: 14px; font-style:italic; color: $grey; }
+
+	p { margin: 0 0 18px 0; }
+	p img { margin: 0; }
+
+	em { font-style: italic; }
+	strong { font-weight: bold;  }
+
+
+/*	Blockquotes  */
+	blockquote, blockquote p { font-family: $chaparral; font-size: 20px; line-height: 30px; color: white; background-color: $dusty-blue; }
+	blockquote { margin: 5px 0 20px 0px; padding: 30px;  }
+	blockquote cite { display: block; font-size: 12px;  }
+	blockquote cite:before { content: "\2014 \0020"; }
+	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: $cherry_black; }
+
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links
+================================================== */
+	a { text-decoration: none; outline: 0; color: $teal; }
+	a:hover, a:focus { text-decoration: none; color: $navy; }
+	p a, p a:visited { line-height: inherit; }
+
+
+/* #Lists
+================================================== */
+	ul, ol { margin-bottom: 0px; }
+	ul { list-style: circle outside; }
+	ol { list-style: decimal; }
+	ol, ul, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+	ul.square { list-style: square outside; }
+	ul.circle { list-style: circle outside; }
+	ul.disc { list-style: disc outside; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 0px 0 0px 20px; font-size: 100%;  }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 0px; }
+	li { line-height: 26px; margin-bottom: 0px; }
