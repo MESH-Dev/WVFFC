@@ -1161,7 +1161,7 @@ header .main-nav #mainNav ul {
 header .main-nav #mainNav ul li {
   display: inline;
   line-height: 70px;
-  padding: 22px 16px;
+  padding: 22px 9px;
 }
 /* line 20, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li.current_page_item a, header .main-nav #mainNav ul li.current_page_ancestor a {
@@ -1284,6 +1284,7 @@ header .main-nav #mainNav ul > li.current_page_ancestor:after {
 /* line 42, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li {
   display: inline;
+  padding: 22px 16px;
 }
 /* line 43, assets/sass/_layout.scss */
 header .main-nav #mainNav ul li ul li:hover a {

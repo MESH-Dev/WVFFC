@@ -16,7 +16,7 @@ header{ border-bottom: 5px solid white; background-color: #d75502;
 		#mainNav { display: inline; float: left; background-color: $orange; width: 55%; height: 100%; font-family: $gothic; text-transform: uppercase; font-size: 22px;
 
 				ul { list-style-type: none; margin-right: 0px; margin-left: 16px; float: left; }
-				ul li { display: inline; line-height: 70px; padding: 22px 16px; }
+				ul li { display: inline; line-height: 70px; padding: 22px 9px; }
 				ul li.current_page_item a, ul li.current_page_ancestor a { border-bottom: 5px solid white; }
 				.menu-item-type-custom.current-menu-item a { border-bottom: 5px solid white; }
 				ul#menu-main-navigation > li:hover:after { content: url('assets/img/arrow.png'); position: absolute; top: 45px; margin-left: -4%; z-index:2; display: inline; }
@@ -39,7 +39,7 @@ header{ border-bottom: 5px solid white; background-color: #d75502;
 
 				ul > li.current_page_ancestor:after { content: url('assets/img/arrow.png'); position: absolute; top: 45px; margin-left: -4%; z-index:2; display: inline; }
 
-				ul li ul li { display: inline; }
+				ul li ul li { display: inline; padding:22px 16px;}
 				ul li ul li:hover a { color: $brown;}
 				ul li ul li:hover:after { display: none; }
 				ul li ul li a { color: $orange; }
