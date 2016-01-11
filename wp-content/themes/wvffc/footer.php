@@ -11,7 +11,7 @@
   <div class="bottom-footer">
     <div class="bottom-footer-left">
       <strong>West Virginia Food & Farm Coalition</strong><br/>
-      411 Main St. Suite 215, Mount Hope, WV 25880<br/>
+      102 East Maple St. Suite #5, Fayetville, WV 25840<br/>
       <strong>T</strong> (304) 877-7920 <strong>E</strong> info@foodandfarm.org
     </div>
     <div class="bottom-footer-right">
