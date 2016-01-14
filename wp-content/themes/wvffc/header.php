@@ -53,7 +53,8 @@
           </div>
       </div>
       <div id="donate">
-        <span><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TTG6V6TWXJVV4" target="_blank">Donate</a></span>
+        <span><a href="http://ktdgu.exnhm.servertrust.com" target="_blank">Donate</a></span>
+        <!-- https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TTG6V6TWXJVV4 -->
       </div>
     </div>
 
